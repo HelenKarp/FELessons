@@ -1,0 +1,215 @@
+* {
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+.blocktext {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 25px, 472px, 40px,472px;
+    max-width: 496px;
+    height: 30px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    z-index: 0;
+}
+.denis {
+    width: 300px;
+height: 40px;
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 30px;
+color: #070707;
+
+}
+.block1 {
+    max-width: 970px;
+    max-height: 387px; 
+    display: flex;
+    margin: 202px, 235px;
+}
+h1 {
+    width: 300px;
+height: 60px;
+margin: 92px, 905px, 50px, 235px ;
+font-style: normal;
+color: #070707;
+}
+
+.block {
+    display: flex;
+flex-direction: column;
+align-items: center;
+padding: 100px 480px;
+gap: 50px;
+isolation: isolate;
+background: #F6F6F6;
+}
+.skills {
+    width: 120px;
+height: 40px;
+
+
+font-style: normal;
+font-weight: 700;
+font-size: 34px;
+line-height: 46px;
+text-align: center;
+color: #070707;
+}
+.skills1 {
+    width: 250px;
+height: 24px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+text-align: center;
+}
+.star {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 97px;
+    
+    width: 970px;
+    height: 230px;
+}
+.ra {
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 970px;
+    height: 230px;
+}
+.portfolio {
+    width: 150px;
+    height: 40px;
+    
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+    text-align: center;
+    color: #070707;
+}
+.store {
+    width: 970px;
+    height: 540px;
+    
+    background: url(../assets/imagesles5/fashionstore.png);
+}
+.ree{
+    width: 970px;
+    height: 550px;
+    
+    background: url(../assets/imagesles5/reebok_web.png);
+}
+.braun {
+    width: 970px;
+height: 540px;
+background: url(../assets/imagesles5/braun.png);
+}
+.a{
+width: 200px;
+height: 50px;
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+text-align: center;
+text-decoration-line: underline;
+color: #070707;
+}
+
+.back{
+    background-color: #e5e5e5;
+}
+.contacts {
+    display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px 3px;
+gap: 60px;
+
+position: absolute;
+width: 970px;
+height: 400px;
+left: 235px;
+top: 3521px;
+}
+.c {
+    width: 150px;
+height: 40px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 34px;
+line-height: 46px;
+text-align: center;
+color: #070707;
+}
+.p {
+    width: 280px;
+height: 23px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 20px;
+text-align: center;
+color: #070707;
+}
+
+.b {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px, 16px,16px, 16px;
+    
+    width: 180px;
+    height: 44px;
+    background: #070707;
+    border-radius: 22px;
+}
+.sg {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 50px;
+    
+    width: 310px;
+    height: 40px;
+}
+.color {
+color: #ffff;
+}
+.like {
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    font-style: normal;
+   margin: 4361px, 620px, 100px, 620px;
+    display:inline-table;
+    color: #828282;
+}
+font-weight: 400;
+font-size: 14px;
+line-height: 19px;
