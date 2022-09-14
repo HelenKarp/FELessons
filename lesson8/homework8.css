@@ -28,7 +28,7 @@ color: #FF8984;
     margin-right: auto;
     padding: 20px 0 45px 0;
 }
-span {
+.span {
 font-size: small;
 }
 .list :nth-child(1n) {
@@ -55,5 +55,4 @@ font-size: small;
     background-color: orchid;
  } 
  input[type="checkbox"] :checked {
-    text-decoration: line-through;
- }
+    text-decoration: line-through;}
