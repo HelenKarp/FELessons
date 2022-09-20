@@ -4,55 +4,125 @@
     box-sizing: border-box;
 }
 .frame {
-    border: 793px, 507px;
+    border: 793px 507px;
     background-color: #3b3f45;
 }
 .header {
     max-width: 793;
-    max-height: 82;
+    padding: 0 130 0 129;
     background: #4A4F56;
 }
 h1 {
- margin: 276px, 28px, 247px, 19px;
+ padding: 19px 270px 0 247px ;
  text-align: center;
  color: #FF8984;
+ font-size: 24px;
+ line-height: 28px;
 }
 h2 {
-margin: 51px, 316px ;
+margin-top:4px ;
+padding-bottom: 12px;
 text-align: center;
 color: #FF8984;
+font-size: 16px;
+line-height: 19px;
 }
 .container {
     max-width: 534px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px 0 45px 0;
+  
 }
-.span {
-font-size: small;
+
+.label {
+    font-size: 18px;
+    line-height: 45px;
+    color: #fff;
+    border: #88839E; 
+    
+}
+.bc {
+    border:#7A7593;
+}
+.shadow {
+    box-sizing: border-box;
+    box-shadow: 0 3px 3px 0 inset  #4A4F56;
+}
+
+.list>*:nth-child(4) {
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+}
+.pickles::after {
+    content: "(for the next lesson about CSS)";
+    font-size: 11px;
+    line-height: 16px;
+    color: #fff;
+    
+}
+.apples::after {
+    content:"(for more CSS manipulations)";
+    font-size: 11px;
+    line-height: 16px;
+    
+    text-decoration: line-through;
+    text-decoration-color: #9b96ac;
+    color: #9B96AC;
+
+}
+.oranges::after{
+    content:"(because they are awesome)";
+    font-size: 11px;
+    line-height: 16px;
+    color: #fff;
+}
+
+.plates::after{
+    content: "(hm..they always disappear)";
+    font-size: 11px;
+    line-height: 16px;
+    color: #fff;
+}
+.sake::after{
+    content: "(for my friends)";
+    font-size: 11px;
+    line-height: 16px;
+    
+    text-decoration: line-through;
+    text-decoration-color: #9b96ac;
+    color: #9B96AC;
 }
 .list :nth-child(1n) {
     border-style:solid;
     text-align: left;
 
 }
-.list :nth-child(even) {
+.list >* {
     background-color: #7A7593;
+    border:  #7A7593;
 }
-.list :nth-child(odd) {
+.list :nth-child(2n+1) {
     background-color: #88839E;
+    border-color:#88839E ;
 }
 .list  :hover {
    background-color:  #625E77;
+   border-color:#625E77 ;
 }
- [type="submit"] {
+ button[type="submit"] {
     background-color: #4A4F56;
     color: #FF8984;
     width: 534px;
     border-style:solid;
+    font-size: 18px;
+    line-height: 45px;
+    border-color: #4A4F56;
  }
- .active  :active {
-    background-color: orchid;
- } 
- input[type="checkbox"] :checked {
-    text-decoration: line-through;}
+ .checked  {
+    text-decoration: line-through;
+    text-decoration-color: #9b96ac;
+    color: #9B96AC;
+ }
+ 
+ 
