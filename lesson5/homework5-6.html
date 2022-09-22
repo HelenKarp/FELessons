@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="/FELessons/assets/css/styles.css">
     
 </head  >
-<body class="block">
+<div class="block">
+<body >
     <header class="container ">   
     <div class="headermenu" > 
     <a href="#home" class="margin color">Home</a>
@@ -42,19 +43,21 @@
     <h2 class="about">
      About me
     </h2>
-    <p class="aboutp">
-        Hi, I'm Denis – UX/UI designer from Minsk.
-        I'm interested in design and everything connected with it. 
-    </p>
+    <div class="maxwidth">
+        <p class="aboutp">
+        Hi, I'm Denis – UX/UI designer from Minsk. <br>
+        I'm interested in design and everything connected with it.
+    </p> 
     
-    <p class="aboutp">
+    <p class="aboutp widthp1">
         I'm studying at courses "Web and mobile design 
         interfaces" in IT-Academy.
     </p>
-    <p class="aboutp">
+    <p class="aboutp widthp2">
         Ready to implement excellent projects
         with wonderful people.
     </p>
+    </div>
     </div>
 </section>
 
@@ -154,31 +157,39 @@
 
 </section>
 </main>
+</body>
 
-<footer> 
-<section id="contacts" class=" contacts">
+<footer class="margintop">  
+<section id="contacts" class=" ">
+    <div class="contactscontainer">
     <div class="c" ><h2>Contacts</h2></div>
     <p class="p" > Want to know more or just chat? </p> 
     <p class="p" > You are welcome!</p>
+    </div>
 
     <div class="social">
-<button type="submit" class="b">  
-    Send message</button>
+
+        <button type="submit" class="b">  
+            Send message</button>
+
     <div class="link">
-   <a href="#" class="sg "> <img src="/FELessons/assets/imagesles5/linkedin.png" 
+        
+   <a href="#" class="sg "> <img class="ppm" src="/FELessons/assets/imagesles5/linkedin.png" 
     alt="Linkedin" ></a>
-  <a href="#" class="sg">  <img  src="/FELessons/assets/imagesles5/Vector2.png" 
+  <a href="#" class="sg ">  <img class="ppm" src="/FELessons/assets/imagesles5/Vector2.png" 
     alt="Instagram"></a>
-    <a href="#" class="sg">  <img  src="/FELessons/assets/imagesles5/behance.png" 
+    <a href="#" class="sg ">  <img class="ppm" src="/FELessons/assets/imagesles5/behance.png" 
         alt="Behance"></a>
-    <a href="#" > <img  src="/FELessons/assets/imagesles5/Vector4.png" 
+    <a href="#"  class=""> <img class="ppm" src="/FELessons/assets/imagesles5/Vector4.png" 
         alt="Dribbble"></a>
     </div>
     </div>
 <a href="#" class="like">
-   <p>Like me on</p> <p>Linkedin, Instagram, Behance</p> <p> Dribble</p>
+   <p class="plast">Like me on</p> 
+   <p class="plast">Linkedin, Instagram, Behance</p>
+    <p class="plast last"> Dribble</p>
 </a>
 </section>  
 </footer> 
-</body>
+</div>
 </html>
