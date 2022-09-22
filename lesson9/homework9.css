@@ -187,9 +187,9 @@ max-width: 1200px;
 max-height: 209px;
 margin-left: 120px;
 top: 1321px;
-
 }
-.mrf {
+.mrf 
+{
     margin-right: 130px;
 }
 .gap {
@@ -225,8 +225,8 @@ h4 {
 }
 .order2 {
     flex: none;
-order: 3;
-flex-grow: 0;
+    order: 3;
+    flex-grow: 0;
 
 }
 
