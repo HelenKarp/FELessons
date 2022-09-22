@@ -8,16 +8,20 @@
     background-color: #fff;
 }
 .container {
-    margin: 0 120px 0 120px;
-   
+    max-width: 1200px;
+    margin: 0 auto;  
 }
+
 .display {
-    margin: 17px 0 17px 0;
+  display: inline-block;
+  vertical-align: middle;
+  
 }
-
-
-.logo {
-    margin: 31px 198px 24px 0;  
+.decor {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 28px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 a {
@@ -34,6 +38,10 @@ a[href="#product"] {
 a[href="#resources"] {
     margin-right: 198px;
 }
+.logo {
+    margin: 31px 198px 24px 0;  
+}
+
 
 .button1 {
     padding: 13px 25px 13px 25px;
@@ -56,9 +64,7 @@ a[href="#resources"] {
     margin-bottom: 17px;
   
 }
-.container1 {
-    margin: 248px 820px 3351px 0;
-}
+
 h1 {
     color: #2f281e;
     font-size: 44px;
@@ -66,17 +72,181 @@ h1 {
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 p {
-    margin-top: 30px;
+
+    margin-top: 16px;
+    margin-bottom: 70px;
     color: #544837;
     font-size: 18px;
     line-height: 28px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-img {
-    margin: -330px 0 0 556px;
-    
-}
+
 .b3 {
     padding: 13px 44px 13px 44px;
     
+}
+.center {
+    margin: auto;
+}
+.features_h2 {
+    margin-top: 100px; 
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    max-width: 539px;
+    color: #2f281e;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.flexbox-container {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 45px;
+    max-height: 388.5px;
+    position: absolute;
+    margin-left: 120px;
+    margin-top: 50px;
+    
+    
+}
+.background {
+   background-image: url(/FELessons/lesson9/background.png);
+   padding-top: 389px;
+   transform: rotate(180deg);
+   width: 1440px;
+   margin-right: auto;
+   margin-left: auto;
+   clip-path: ellipse();
+   background: linear-gradient(179.61deg, rgba(255, 229, 210, 0.629261) 0.33%, rgba(255, 244, 229, 0.0001) 99.67%);
+   background-size: contain;
+}
+.h3 {
+    margin-top: 30px;
+    font-size: 22px;
+    line-height: 27px;
+    color: #2f281e;
+   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.text {
+    font-size: 16px;
+    line-height: 26px;
+    color: #544837;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.flex1 {
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+
+width: 270px;
+height: 175px;
+}
+.flexbutton {
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 13px 40px;
+margin-top: 264px;
+margin-bottom: 74px;
+
+position: absolute;
+width: 180px;
+height: 50px;
+left: 515px;    
+}
+.line {
+    position: absolute;
+width: 1440px;
+height: 1px;
+left: 0px;
+;
+
+
+}
+footer.style {
+    background-color: #666;
+}
+.footer-container {
+ display: flex;
+padding: 0px 0px 70px;
+gap: 102px;
+position: absolute;
+max-width: 1200px;
+max-height: 209px;
+margin-left: 120px;
+top: 1321px;
+
+}
+.mrf {
+    margin-right: 130px;
+}
+.gap {
+    
+    gap: 30px;
+    max-width: 135px;
+    max-height: 209px;
+}
+h4 {
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 30px;
+    color: #2F281E;
+    width: 100%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.h4pad{
+    padding-bottom: 25px;
+}
+.flax44 {
+    float: left;
+    padding: 10px;
+    height: 700px;
+    width: 25%;
+}
+.mar {
+    margin-bottom: 15px;
+}
+.a { 
+    
+    font-size: 16px;
+    line-height: 26px;
+    color: #544837;
+    text-decoration: none;
+}
+.order2 {
+    flex: none;
+order: 3;
+flex-grow: 0;
+
+}
+
+.input {
+    box-sizing: border-box;
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 10px;
+gap: 10px;
+font-size: 16px;
+line-height: 50px;
+width: 340px;
+height: 50px;
+
+border: 1px solid #BCD0E5;
+border-radius: 4px;
+}
+.bmar {
+margin-top: 25px;
 }
