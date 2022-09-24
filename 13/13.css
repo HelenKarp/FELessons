@@ -1,0 +1,385 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1440px;
+    max-height: 2375px;
+
+}
+.headerblock {
+    max-width: 1440px;
+    max-height: 80px;  
+}
+.container__header {
+  
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 1200px;
+    max-height: 54px;
+    margin-top: 13px ;
+
+
+}
+.displaylogo {
+    display:flex;
+    justify-content: flex-end;  
+   padding-left: 0;
+    margin-left: 601px;
+    
+    order: 2;
+}
+.navblock {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    padding: 0px;
+    gap: 10px;
+    max-width: 261px;   
+
+}
+.nav2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    align-items: center;  
+}
+
+.eng {
+    margin-right: 50px;
+   margin-left: 120px;
+   margin-top: 16px;
+   margin-bottom: 17.5px;
+    max-width: 50px;
+    
+    font-family: 'Tourney', cursive;
+    font-size: 22px;
+line-height: 28px;
+order: 0;
+text-align: center;
+color: #000;
+text-decoration: none;
+letter-spacing: 0.04em;
+}
+.astyle {
+    display: flex;
+    
+    padding: 4px 0;
+    font-size: 22px ;
+    line-height: 27.5px;
+    color: #000;
+    display: inline-flex;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    font-family: 'Staatliches', cursive;
+    order: 1;
+}
+
+.maincontainer {
+    max-width: 1200px;
+    max-height: 2225px;
+    margin-top: 96px;
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0 0 90px 0;
+gap: 70px;
+}
+.maincontainer__chapter1{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 40px;
+
+width: 1200px;
+height: 221px;
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+}
+.titlebox {
+    margin-left: 120px;
+    margin-right: 120px;
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+font-size: 36px;
+font-family: 'Francois One', sans-serif;
+max-width: 344px;
+max-height: 48px;
+text-transform: uppercase;
+    white-space: nowrap;
+}
+.chapter {
+    
+    width: 100px;
+height: 20px;
+order: 1;
+font-family: 'Farro', sans-serif;
+font-style: normal;
+
+font-size: 18px;
+line-height: 20px;
+letter-spacing: 0.04em;
+}
+.chaptertext {
+    margin-left: 120px;
+    
+    
+    max-width: 1200px;
+    max-height: 133px;
+
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+
+    font-size: 28px;
+    line-height: 48px;
+    color: #000000;
+}
+.underline {
+    text-decoration: underline ;
+}
+.mainconteiner__chapter2 {
+  
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 40px;
+order: 1;
+width: 1200px;
+height: 318px;
+}
+.titlebox2 {
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+margin-left: 120px;
+padding-top: 0;
+max-width: 420px;
+max-height: 48px;
+font-size: 36px;
+line-height: 48px;
+font-family: 'Francois One', sans-serif;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+    white-space: nowrap;
+
+}
+.chaptertext1 {
+    max-width: 1200px;
+max-height: 230px;
+margin-left: 120px;
+font-family: 'PT Sans';
+font-style: normal;
+font-size: 28px;
+line-height: 48px;
+color: #000000;
+
+flex: none;
+order:2;
+flex-grow: 0
+}
+.italic {
+font-style: italic;
+}
+.order1 {
+order: 4;
+margin-left: 0;
+}
+   
+.mainconteiner__chapter3 {
+    
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 40px;
+isolation: isolate;
+margin-left: 120px;
+max-width: 1200px;
+max-height: 993px;
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+}
+.titlebox3 {
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+max-width: 477px;
+max-height: 48px;
+flex: none;
+order: 3;
+flex-grow: 0;
+z-index: 3;
+text-transform: uppercase;
+white-space: nowrap;
+font-family: 'Francois One';
+font-style: normal;
+font-size: 36px;
+line-height: 48px;
+letter-spacing: 0.04em;
+}
+.chaptertext2 {
+    max-width: 1200px;
+    max-height: 39px;
+
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-size: 28px;
+    line-height: 48px;
+    color: #000000;
+    flex: none;
+    order: 5;
+    flex-grow: 0;
+    z-index: 5;
+}
+.chaptertext3{
+    max-width: 1200px;
+max-height: 86px;
+
+font-family: 'PT Sans';
+font-style: normal;
+font-size: 28px;
+line-height: 48px;
+color: #000000;
+flex: none;
+order: 6;
+flex-grow: 0;
+z-index: 6;
+
+}
+.bold {
+   font-weight: bold; 
+}
+.background {
+    background-color: #dadada;
+}
+.chaptertext4 {
+    width: 1200px;
+height: 96px;
+
+font-family: 'PT Sans';
+font-style: normal;
+
+font-size: 28px;
+line-height: 48px;
+color: #000000;
+flex: none;
+order: 7;
+flex-grow: 0;
+z-index: 7;
+}
+.chaptertext5{
+    max-width: 1200px;
+max-height: 142px;
+font-family: 'PT Sans';
+font-style: normal;
+font-size: 28px;
+line-height: 48px;
+color: #000000;
+flex: none;
+order: 8;
+flex-grow: 0;
+z-index: 8;
+}
+.chaptertext6 {
+    max-width: 1200px;
+max-height: 36px;
+font-family: 'PT Sans';
+
+font-size: 28px;
+line-height: 48px;
+color: #000000;
+flex: none;
+order: 9;
+flex-grow: 0;
+z-index: 9;
+}
+.chaptertext7 {
+    width: 1200px;
+    height: 134px;
+    font-family: 'PT Sans';
+    font-style: normal;
+
+    font-size: 28px;
+    line-height: 48px;
+    
+    color: #000000;
+    flex: none;
+    order: 10;
+    flex-grow: 0;
+    z-index: 10;
+}
+.maincontainer__chapter4 {
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 40px;
+
+
+margin-left: 120px;
+max-width: 1200px;
+max-height: 393px;
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+}
+.titlebox4 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;   
+    max-width: 465px;
+    max-height: 48px; 
+    font-family: 'Francois One';
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    color: #000;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.chaptertext8 {
+    max-width: 1200px;
+max-height: 133px;
+
+font-family: 'PT Sans';
+
+font-size: 28px;
+line-height: 48px;
+color: #000000;
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+.chaptertext9 {
+    max-width: 1200px;
+max-height: 132px;
+
+font-family: 'PT Sans';
+font-size: 28px;
+line-height: 48px;
+color: #000000;
+flex: none;
+order: 2;
+flex-grow: 0;
+}
