@@ -20,6 +20,7 @@ max-width: 1440px;
 max-height: 1173px;
 
 
+
 }
 .headercontainer {
     /*position: absolute;*/
@@ -76,8 +77,11 @@ margin-top: 28px;
     
     
 }
+a:hover {
+    color: var(--blue);
+}
 .blue {
-    color: #18B5DC;
+    color: var(--blue); 
 }
 .order3 {
     order: 3;
@@ -110,6 +114,7 @@ position: absolute;
 max-width: 130px;
 max-height: 42px;
 margin-left: 1174px;
+margin-right: 135px;
 margin-top: 19px;
 border: 1px solid #3C3C3C;
 background-color: #FFFFFF;
@@ -121,6 +126,7 @@ text-transform: uppercase;
 .button:hover {
     color: #FFFFFF;
     background-color: #18B5DC;
+    border: none;
 }
 
 .hr {
@@ -235,7 +241,13 @@ border: 1px solid #18B5DC;
 .who-w-a__container {
     
 max-width: 1170px;
+margin-left: 135px;
+margin-right: 135px;
 
+}
+.container {
+
+  margin: 0 auto;
 }
 .who-w-a__title {
     position: relative;
@@ -245,17 +257,24 @@ max-width: 1170px;
     font-size: 34px;
     line-height: 41px;
     text-align: center;
+    margin: 0 auto;
     letter-spacing: 0.13em;
     text-transform: uppercase;
     padding-bottom: 24px;
     color: var(--textdark);   
+    
 }
 .who-w-a__title::after {
-    
+    content: "";
     height: 4px;
     width: 45px;
     background-color: var(--after);
     position: absolute;
+    display: flex;
+   justify-content: center;
+    align-items: center;
+   margin-left: 550px;
+   
     bottom: 0;
 }
 .who-w-a__description {
@@ -280,6 +299,9 @@ max-width: 1170px;
     display: grid;
     grid-template-columns: repeat(4.1fr);
     gap: 30px;
+
+    margin-right: auto;
+    margin-left: auto;
 }
 .gridorder1 {
     display: grid;
