@@ -28,7 +28,7 @@ section + section {
    position: relative;
 }
 .l-gradient::after {
-    content:"Clem Onojeghuo  " ;
+    content:"" ;
     background: linear-gradient(360deg, #241f24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%);
     position: absolute;
     font-weight: 500;
@@ -50,42 +50,91 @@ section + section {
    color: #fff;
     
 }
-.l-gradient::after::after {
-    position: absolute;
-    content:"1 July 2021" ;
-    color: #E0E0E0;
-    font-size: 400;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    line-height: 63px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    flex-direction: row;
-    
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
 
-}
 .l-gradient:hover::after {
     position: absolute;
-    content:"Clem Onojeghuo";
-    background: linear-gradient(270deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%);
+    content:"";
+    background: linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%);
     border-radius: 20px;
-     
-
      color: #fff;
      left: 0;
      top: 0;
      width: 100%;
      height: 100%;
 }
+
 .heart-container {
-    position: relative;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 20px;
+    top: 20px;
+   
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    order: 1;
+    background: rgba(224, 224, 224, 0.5);
+    border-radius: 8px;
 }
-.heart-container:hover::after  {
+.heart-container:hover {
+
+background-color: #E0E0E0;
+}
+
+.heart-container1 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 20px;
+    top: 20px;
+    z-index: 1;
+    color: #4F4F4F;
+    width: 40px;
+    height: 40px;
+    
+    order: 2;
+    background: rgba(224, 224, 224, 0.5);
+    border-radius: 8px;
+}
+
+.heart-container1:hover {
+    
+    background-color: #E0E0E0;
+   
+   
+}
+.text {
+    position: absolute;
+    
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 400;
+    z-index: 1;
+}
+.text span:first-child {
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 23px;
+    color: #fff;
+}
+.text span:last-child {
+    color: #E0E0E0;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+line-height: 23px;
+}
+/*.heart-container:hover::after  {
     position: absolute;
     opacity: 1;
     display: flex;
@@ -94,17 +143,8 @@ section + section {
     order: 1;
     background: #E0E0E0;
     border-radius: 8px;
-}
-.heart-container {
-    position: relative;
-    opacity: 0;
-    display: flex;
-    max-width: 40px;
-    max-height: 40px;
-    order: 2;
-    background: rgba(224, 224, 224, 0.5);
-    border-radius: 8px;
-}
+}*/
+
 
 /*.textbottom {
     content: "Clem Onojeghuo" " 1 July 2021";
