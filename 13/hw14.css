@@ -1,0 +1,345 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.container__header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 13px;
+}
+
+.displaylogo {
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 0;
+}
+
+.navblock {
+    display: flex;
+    gap: 10px;
+}
+
+.nav2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerblock__left {
+    display: flex;
+    align-items: center;
+}
+
+.eng {
+    margin-right: 50px;
+    font-family: 'Tourney', cursive;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    letter-spacing: 0.04em;
+}
+
+.astyle {
+    font-size: 22px;
+    color: #000;
+    display: inline-flex;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    font-family: 'Staatliches', cursive;
+}
+
+.maincontainer {
+   
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 0 90px 0;
+    gap: 70px;
+}
+.aside {
+    position: sticky;
+    top: 80px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 70px;
+    max-width: 365px;
+    max-height: 462px;
+}
+.aside__item {
+
+    font-family: 'Francois One', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    white-space: nowrap;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+    gap: 10px;
+padding-bottom: 10px;
+   max-width: 365px;
+   max-height: 58px;
+   border-bottom: 1px solid #BDBDBD;
+}
+.bcgrnd {
+    position: relative;
+    width: 100%;
+   margin-right: 0;
+   margin-left: 545px;
+   margin-top: -530px;
+}
+.aside  nav {
+    position: sticky;
+    top: 80px;
+}
+.maincontainer__chapter1 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 785px;
+    margin-left: 415px;
+    margin-top: 0;
+    padding-bottom: 70px;
+    gap: 40px;
+    align-self: stretch;
+   /*background-image: url(/FELessons/13/bg-picture.png);*/
+}
+.mainconteiner__chapter2 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 785px;
+    margin-left: 415px;
+    margin-top: 378px;
+    padding-bottom: 70px;
+  
+    gap: 40px;
+    align-self: stretch;
+}
+
+
+.titlebox {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 344px;
+   max-height: 48px;
+    margin-top: 28px;
+    gap: 10px;
+    font-size: 36px;
+    font-family: 'Francois One', sans-serif;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.title-line {
+   
+  
+    width: 100px ;
+    height: 8px;
+    
+    background-color: #000;
+  
+}
+
+.chapter {
+    font-family: 'Farro', sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    text-transform: none;
+}
+
+.chaptertext {
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-size: 28px;
+    line-height: 48px;
+    color: #000000;
+}
+
+.underline {
+    text-decoration: underline;
+}
+​
+
+
+.titlebox2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    padding-top: 0;
+    font-size: 36px;
+    line-height: 48px;
+    font-family: 'Francois One', sans-serif;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.chaptertext1 {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-size: 28px;
+    line-height: 48px;
+    color: #000000;
+   
+}
+
+.italic {
+    font-style: italic;
+}
+
+.order1 {
+    margin-left: 0;
+}
+
+.mainconteiner__chapter3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    margin-top: 900px;
+    padding: 0px;
+    gap: 40px;
+    max-width: 785px;
+    margin-left: 415px;
+    padding-bottom: 70px;
+   
+    align-self: stretch;
+}
+
+.titlebox3 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-family: 'Francois One';
+    font-style: normal;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+}
+
+.chaptertext2 {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-size: 28px;
+    line-height: 48px;
+    color: #000000;
+}
+
+.chaptertext3 {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-size: 28px;
+    line-height: 48px;
+    color: #000000;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.background {
+    background-color: #dadada;
+}
+
+.chaptertext4 {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-size: 28px;
+    line-height: 48px;
+    color: #000000;
+}
+
+.chaptertext5 {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-size: 28px;
+    line-height: 48px;
+    color: #000000;
+}
+
+.chaptertext6 {
+    font-family: 'PT Sans';
+    font-size: 28px;
+    line-height: 48px;
+    color: #000000;
+}
+
+.chaptertext7 {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-size: 28px;
+    line-height: 48px;
+    color: #000000;
+}
+
+.maincontainer__chapter4 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    margin-top: 1490px;
+    max-width: 785px;
+    margin-left: 415px;
+    padding: 0px;
+    gap: 40px;
+    align-self: stretch;
+}
+
+.titlebox4 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    font-family: 'Francois One';
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    color: #000;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.chaptertext8 {
+    font-family: 'PT Sans';
+    font-size: 28px;
+    line-height: 48px;
+    color: #000000;
+}
+
+.chaptertext9 {
+    font-family: 'PT Sans';
+    font-size: 28px;
+    line-height: 48px;
+    color: #000000;
+}
