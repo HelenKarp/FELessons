@@ -14,13 +14,15 @@
 .container__header {
     display: flex;
     justify-content: space-between;
-    margin-top: 13px;
+   /* margin-top: 13px;*/
+    position: fixed;
+     top: 0;
 }
 
 .displaylogo {
     display: flex;
     justify-content: flex-end;
-    padding-left: 0;
+    padding-left: 601px;
 }
 
 .navblock {
@@ -64,10 +66,9 @@
    
     margin-top: 70px;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    
     padding: 0 0 90px 0;
-    gap: 70px;
+    gap: 30px;
 }
 .aside {
     position: sticky;
@@ -100,37 +101,33 @@ padding-bottom: 10px;
    border-bottom: 1px solid #BDBDBD;
 }
 .bcgrnd {
-    position: relative;
-    width: 100%;
-   margin-right: 0;
-   margin-left: 545px;
-   margin-top: -530px;
+    position: fixed;
+    right: 0;
+   
 }
 .aside  nav {
     position: sticky;
     top: 80px;
 }
 .maincontainer__chapter1 {
-    position: absolute;
+   
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    position: relative;
     max-width: 785px;
-    margin-left: 415px;
-    margin-top: 0;
+   
     padding-bottom: 70px;
     gap: 40px;
-    align-self: stretch;
-   /*background-image: url(/FELessons/13/bg-picture.png);*/
+    
 }
 .mainconteiner__chapter2 {
-    position: absolute;
+   
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     max-width: 785px;
-    margin-left: 415px;
-    margin-top: 378px;
+   position: relative;
     padding-bottom: 70px;
   
     gap: 40px;
@@ -221,15 +218,13 @@ padding-bottom: 10px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    position: absolute;
-    margin-top: 900px;
+    position: relative;
     padding: 0px;
     gap: 40px;
     max-width: 785px;
-    margin-left: 415px;
+   
     padding-bottom: 70px;
    
-    align-self: stretch;
 }
 
 .titlebox3 {
@@ -306,13 +301,11 @@ padding-bottom: 10px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    
-    margin-top: 1490px;
-    max-width: 785px;
-    margin-left: 415px;
+    position: relative;
+   
     padding: 0px;
     gap: 40px;
-    align-self: stretch;
+   
 }
 
 .titlebox4 {

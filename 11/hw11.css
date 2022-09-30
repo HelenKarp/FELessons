@@ -6,16 +6,25 @@
 
 .maincontainer {
     position: relative;
+    display: flexbox;
+    justify-content: center;
 max-width: 1440px;
 max-height: 5565px;
+margin-left: auto;
+margin-right: auto;
 
 background: #FFFFFF;
 }
 .cities__container {
     position: relative;
+    position: relative;
+    display: flexbox;
+    justify-content: center;
+    
+    margin-left: auto;
+    margin-right: auto;
 max-width: 1170px;
-max-height: 1295px;
- margin-left: 135px;
+/* margin-left: 135px;*/
 margin-top: 120px;
 margin-bottom: 120px;
 
@@ -31,12 +40,10 @@ section + section {
     content:"" ;
     background: linear-gradient(360deg, #241f24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%);
     position: absolute;
-    font-weight: 500;
-    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     line-height: 63px;
     text-indent: 20px;
-   
+  
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
@@ -70,16 +77,28 @@ section + section {
     justify-content: center;
     left: 20px;
     top: 20px;
-   
-    z-index: 1;
+   opacity: 0;
+   z-index: 1;
     width: 40px;
     height: 40px;
     order: 1;
     background: rgba(224, 224, 224, 0.5);
     border-radius: 8px;
 }
-.heart-container:hover {
+.heart-container::after:hover{
+    opacity: 1;
+}
+.l-gradient:hover .heart-container {
+  
+    opacity: 1;
+}
+.l-gradient:hover .heart-container1 {
+    opacity: 1;
+}
 
+.heart-container:hover {
+    
+    opacity: 1;
 background-color: #E0E0E0;
 }
 
@@ -94,7 +113,7 @@ background-color: #E0E0E0;
     color: #4F4F4F;
     width: 40px;
     height: 40px;
-    
+    opacity: 0;
     order: 2;
     background: rgba(224, 224, 224, 0.5);
     border-radius: 8px;
@@ -185,12 +204,16 @@ letter-spacing: 0.05em;
 color: #000000;
 }
 .cities-container__content-container {
+
     max-width: 1170px;
-max-height: 1170px;
+display: flexbox;
+justify-content: center;
 display: grid;
 grid-template-columns: repeat(3, 1fr);
 grid-template-rows: repeat(3, 1fr);
 gap: 30px;
+margin-left: auto;
+margin-right: auto;
 
 }
 img {
@@ -226,14 +249,17 @@ img {
 }
 .nature-container {
     position: relative;
+    display: flexbox;
+    justify-content: center;
 width: 1170px;
 height: 1695px;
 margin-left: 135px;
 }
 .nature-container__content-container {
-    
+   margin-left: auto;
+   margin-right: auto; 
 max-width: 1170px;
-max-height: 1570px;
+
 display: grid;
 grid-template-columns: repeat(3, 1fr);
 grid-template-rows: repeat(4, 1fr);
@@ -259,14 +285,19 @@ gap: 30px;
 }
 .people-container {
     position: relative;
+    display: flexbox;
+    justify-content: center;
+    margin-left: auto;
+   margin-right: auto; 
 max-width: 1170px;
 max-height: 2095px;
 margin-left: 135px;
 }
 .people-container__content-container {
-    
+    margin-left: auto;
+   margin-right: auto; 
 max-width: 1170px;
-max-height: 1970px;
+
 display: grid;
 grid-template-columns: repeat(3, 1fr);
 grid-template-rows: repeat(6, 1fr);
