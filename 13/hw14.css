@@ -14,9 +14,12 @@
 .container__header {
     display: flex;
     justify-content: space-between;
+    z-index: 1;
    /* margin-top: 13px;*/
     position: fixed;
      top: 0;
+     background-color: #ffff
+      ;
 }
 
 .displaylogo {
