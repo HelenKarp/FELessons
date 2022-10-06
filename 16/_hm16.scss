@@ -1,0 +1,275 @@
+.box {
+    max-width: 1440px;
+    background-color: $white;
+    margin: 0 auto;
+}
+
+.content-box {
+        display: flex;
+        flex-direction: column;
+       
+        padding: 0px;
+        gap: 40px;
+        
+        position: absolute;
+        max-width: 1170px;
+        
+      
+       margin: 121px 135px 122px 135px;
+
+       &__title {
+        max-width: 450px;
+        max-height: 157px;
+        
+        margin: 0 291px;
+        white-space: nowrap;
+        text-align: center;
+       
+       }
+       &__title-text1 {
+        color: $mgrey;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+         
+        text-transform: uppercase;
+    
+        }
+        &__h1 {
+            font-family: 'Roboto', sans-serif;
+            color: $gold;
+            font-weight: 900;
+            font-size: 60px;
+            line-height: 66px;
+            margin-top: 15px;
+             
+            text-transform: uppercase;
+        }
+        &__divider {
+            position: absolute;
+            max-width: 450px;
+            max-height: 20px;
+            color: $gold;
+            border: none;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .container {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: space-between;
+        
+      //margin-left: 70px;
+       //margin-right: 70px;
+        max-width: 1030px;
+        max-height: 560px;
+
+       // &__column {
+           // box-sizing: border-box;
+           // float: left;
+           // width: 50%;
+      //  }
+        
+        &__left {
+           display: flexbox;
+           justify-content: flex-start;
+            max-width: 430px;
+            max-height: 430px;
+            order: 0;
+            margin-left: 0;
+            margin-top: 65px;
+            padding-right: 20px;
+            
+            
+        }
+        &__left-top {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-top: 1px solid $gold;
+            border-left: 1px solid $gold ;  
+        }
+        &__left-bottom {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            margin-top: 330px;
+            border-bottom: 1px solid $gold;
+            border-left: 1px solid $gold ;  
+         
+        }
+        &__right-top {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            margin-left: 330px;
+            border-top: 1px solid $gold;
+            border-right: 1px solid $gold ; 
+        }
+        &__right-bottom {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            margin-top: 330px;
+            margin-left: 330px;
+            border-bottom: 1px solid $gold;
+            border-right: 1px solid $gold ; 
+        }
+
+        &__img {
+            margin-top: 15px;
+            margin-left: 15px;
+            
+            position: relative;
+        }
+        &__right{
+            position: absolute;
+            max-width: 430px;
+            max-height: 420px;
+            right: 0;
+            align-items: center;
+           
+        }
+        &__vl {
+            position: absolute;
+            border-left: 1px solid $gold ;
+            height: 560px;
+            margin-left: 515px;
+            top: 0;
+        }
+        &__title {
+            margin-top: 70px;
+            margin-right: 97px;
+            font-family: 'Roboto', sans-serif;
+            color: $grey;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 36px;
+            line-height: 42px;
+            text-align: center;
+            text-transform: capitalize;
+        }
+        &__title-line {
+          
+           background-color: $gold;
+            width: 100px;
+            height: 1px;
+            margin-top: 30px;
+            margin-left: 64px;
+          
+        }
+        &__title-position {
+            width: 283px;
+            height: 28px;
+            //text-align: center;
+            font-family: 'Raleway', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 36px;
+            margin-top: 30px;
+            text-transform: capitalize;
+           color: $grey;
+        }
+        &__socials {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 5px;
+            position: absolute;
+            width: 135px;
+            height: 30px;
+        }
+        &__text {
+            position: absolute;
+            width: 430px;
+            height: 116px;
+            left: 600px;
+          text-align: center;
+            margin-top: 311px;
+            font-family: 'Raleway', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            color: $dgrey;
+        }
+       &__decore {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 5px;
+
+        position: absolute;
+        width: 50px;
+        height: 4px;
+        left: 790px;
+        top: 447px;
+       
+       }
+    &__decore-item1 {
+        width: 10px;
+        height: 4px;
+        background-color: $gold;
+    }
+    &__decore-item2 {
+        width: 20px;
+        height: 4px;
+        background-color: $gold;
+    }
+    &__button {
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 10px;
+        background-color: $white;
+        position: absolute;
+        width: 118px;
+        height: 24px;
+        left: 756px;
+        top: 481px;
+        border: 1px solid $gold;
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 14px;
+        color: $grey;
+
+        text-align: center;
+        text-transform: uppercase;
+    }
+    }
+    .socials {
+        margin-top: 30px;
+        margin-left: 35px;
+        
+       
+        &__item1 {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 2px solid $ltgrey;
+        
+        }
+        &__svg1 {
+        padding: 9px 12px;
+        }
+        &__svg2 {
+            padding: 9px 8px;
+        }
+        &__svg3 {
+            padding: 9px 6px 9px 5px;
+        }
+        &__svg4 {
+            padding: 9px 9px;
+        }
+    }
