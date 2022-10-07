@@ -112,20 +112,26 @@ p {
     max-height: 388.5px;
     position: absolute;
     margin-left: 120px;
-    margin-top: 50px;
-    
-    
+     
 }
+
+.section-style {
+    background-image: url(/FELessons/lesson9/background.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    width: 100%;
+}
+
 .background {
-   background-image: url(/FELessons/lesson9/background.png);
-   padding-top: 389px;
+ 
+  /* padding-top: 389px;
    transform: rotate(180deg);
    width: 1440px;
    margin-right: auto;
    margin-left: auto;
    clip-path: ellipse();
    background: linear-gradient(179.61deg, rgba(255, 229, 210, 0.629261) 0.33%, rgba(255, 244, 229, 0.0001) 99.67%);
-   background-size: contain;
+   background-size: contain;*/
 }
 .h3 {
     margin-top: 30px;
@@ -144,30 +150,26 @@ p {
 }
 .flex1 {
     display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-
-
-width: 270px;
-height: 175px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    max-width: 270px;
+    
 }
 .flexbutton {
-    display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 13px 40px;
-margin-top: 264px;
-margin-bottom: 74px;
+   
 
-position: absolute;
+padding: 13px 40px;
+margin-top: 245px;
+margin-bottom: 57px;
+margin-left: 555px;
+margin-right: auto;
 width: 180px;
 height: 50px;
-left: 515px;    
+ 
 }
 .line {
-    position: absolute;
+    
 width: 1440px;
 height: 1px;
 left: 0px;
@@ -184,9 +186,9 @@ padding: 0px 0px 70px;
 gap: 102px;
 position: absolute;
 max-width: 1200px;
-max-height: 209px;
+margin-top: 70px;
 margin-left: 120px;
-top: 1321px;
+
 }
 .mrf 
 {
