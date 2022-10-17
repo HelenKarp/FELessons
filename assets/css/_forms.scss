@@ -1,0 +1,53 @@
+.form {
+    max-width: 50%;
+}
+
+.input-field {
+    &__label {
+        display: block;
+        position: relative;
+        line-height: 20px;
+        margin-bottom: 5px;
+
+
+    }
+    &__input {
+        width: 100%;
+         border: 1px solid #3333;
+         outline: 10px solid blue;
+         outline: none;
+         padding: 15px 10px;
+        border-radius: 3px;
+        color: blueviolet;
+        font-weight: 400;
+        font-size: 16px;
+            line-height: 20px;}
+        &::placeholder {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #3333;
+        }
+        &__wrapper {
+            display: flex;
+            align-items: center;
+            &::after {
+                content: "1";
+                display: inline-block;
+                position: absolute;
+                left: 450px;
+            }
+        }
+        &__icon {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            left: 170px;
+           
+            
+        }
+        &__text {
+            resize: none;
+            width: 102%;
+        }
+}

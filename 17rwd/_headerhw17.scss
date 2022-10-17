@@ -1,0 +1,221 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 auto;
+    position: absolute;
+    margin: 0 auto;
+    //max-width: 1440px;
+    width: 100%;
+    max-height: 100px;
+    height: 100%;
+    @media screen and (max-width: 768px) {
+       max-height: 60px; 
+       height: 100%;
+         }
+   
+
+    &__container {
+        //max-width: 1170px;//
+        max-height: 20px;
+        width: 100%;
+        height: 100%;
+        margin: 40px auto;
+        @media screen and (max-width: 768px) {
+            
+            margin: 20px auto ;
+             }
+    }
+    &__logo {
+        margin-left: 9%;
+        @media screen and (max-width: 900px) {
+            left: 3%;
+             }
+        @media screen and (max-width: 768px) {
+               
+                margin-left: 34px ;
+                 }
+        @media screen and (max-width: 320px) {
+               
+            margin-left: 10px ;
+
+                     }
+
+             
+    }
+    &__menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        //margin: 0 auto;
+        //margin-left: 35%;
+        padding: 0px;
+        gap: 3%;
+       // isolation: isolate;
+        justify-content: right;
+        position: absolute;
+        ///max-width: 500px;
+        //max-height: 18px;
+        width: 100%;
+        height: 100%;
+        right: 9%;
+        //left: 569.79px;
+        top: 0;
+        //top 41px
+         @media screen and (max-width: 768px) {
+       display: none; 
+        }
+        @media screen and (max-width: 900px) {
+            right: 3%;
+             }
+        @media screen and (max-width: 320px) {
+               
+        right: 10px ;
+                
+                         }
+    }
+   
+    &__menu-item {
+       display: flex;
+     margin-top: 1px;
+     margin-bottom: 1px;
+     font-family: $lato400;
+     font-style: normal;
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 17px;
+     letter-spacing: 0.3em;
+     text-transform: uppercase;
+     text-decoration: none;
+     color: $black;
+     
+     } 
+     &__menu-item:hover + &__width {
+        
+       opacity: 1;
+       
+    }
+     &__width {
+        opacity: 0;
+        position: relative;
+        height: 1px;
+       margin-right: 8px;
+       margin-left: 8px; 
+        background-color: $black;
+    }
+    
+    
+
+    &__search {
+        //position: absolute;
+        //margin-left: 89%;
+        margin-left: 41px;
+        top: 41px;
+        
+        
+    }
+    &__burger-search {
+        opacity: 0;
+        //display: none;
+       
+        @media screen and (max-width: 768px) {
+            display:flex; 
+            opacity: 1;
+            position: absolute;
+            top: 20px;
+            
+            //max-width: 94px;
+            justify-content: right;
+            right: 34px ;
+            width: 100%;
+            height: 100%;
+            max-height: 21px;
+            gap: 40px;
+             }
+    }
+    &__burger {
+        opacity: 0;
+        //display: none;
+        @media screen and (max-width: 768px) {
+            opacity: 1;
+            display:flexbox; 
+            flex-direction: row;
+            align-items:center;
+            justify-content: space-between ;
+            max-width: 34px;
+            width: 100%;
+            
+             }
+
+   }
+   &__burger-line {
+    opacity: 0;
+    //display: none;
+    @media screen and (max-width: 768px) {
+        
+        opacity: 1;
+        background-color: $black;
+        height: 1px;
+        width: 100%;
+        
+         }
+   }
+   &__burger-line2 {
+    opacity: 0;
+    @media screen and (max-width: 768px) {
+        margin: 9px 0;
+        opacity: 1;
+        background-color: $black;
+        height: 1px;
+        width: 100%;
+        
+         }
+   }
+
+
+    &__screen {
+        position: absolute;
+        //max-width: 1440px;
+        min-height: 600px;
+        max-height: 600px;
+
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        left: 0px;
+        top: 100px;
+        background-image: url(/FELessons/17rwd/bg-image.png);
+        //background-size: 100%;
+        background-repeat: no-repeat;
+        //padding-right: 9%;
+            @media screen and (max-width: 768px) {
+                top: 60px;
+                max-height: 320px;
+                min-height: 320px;
+            }
+            @media screen and (max-width: 573px) {
+                min-height: 500px;
+                max-height: 500px;
+            }
+    }
+    &__par {
+       // position: absolute;
+       margin-left: 9%;
+        max-width: 770px;
+        max-height: 120px;
+        //width: 100%;
+        left: 135px;
+        margin-top: 100px;
+
+        font-family: $redfont400;
+        font-weight: 600;
+        font-style: normal;
+        padding: 0;
+        font-size: 48px;
+        line-height: 64px;
+        letter-spacing: 0.05em;
+
+        color: $black;
+    }
+}

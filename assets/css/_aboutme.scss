@@ -1,0 +1,13 @@
+ 
+ 
+.aboutme {
+
+    @extend .banner;
+
+    &__text {
+       
+        color: $blue;
+        background-color: $alblue;
+    }
+    
+}
