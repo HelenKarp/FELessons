@@ -1,0 +1,454 @@
+.why {
+    
+   background-repeat: round;
+    @media screen and (max-width: $fullscreen) {
+        
+        min-height: 704px;
+        background-image: url(/FELessons/project1/bgproject1/bgdesktop/WhyBackground\ \(3\).png);
+     }
+     @media screen and (max-width: $tabletBig) {
+       
+        min-height: 659px;
+        background-image: url(/FELessons/project1/bgproject1/bgtabletbig/WhyBackground\ \(2\).png);
+    }
+    @media screen and (max-width: $tablet) {
+        
+        min-height: 630px; 
+        background-image: url(/FELessons/project1/bgproject1/bgtablet/WhyBackground\ \(1\).png);
+   }
+   @media screen and (max-width: $mobile) {
+   
+    background-image: url(/FELessons/project1/bgproject1/bgmobile/WhyBackground.png);
+   }
+    
+  
+    &__margin {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        @media screen and (min-width: $tabletBig){
+            margin: 0 0 0 24px;
+        }
+    }
+
+    &__container{
+     width: 93.75%;
+     margin: 0 auto;
+  
+    @media screen and (min-width: $tabletBig){
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    @media screen and (min-width: $desktop) {
+        width: 83.82%;
+    }
+    }
+    
+    &__img-container {
+    display: flex;
+    gap: 24px;
+    padding-top: 60px;
+    @media screen and (max-width: 560px ){
+        flex-direction: column;
+    }
+    @media screen and (min-width: $tabletBig ){
+        flex-direction: column;  
+    }
+    }
+    &__img-frame {
+     width: 100%;
+     @media screen and (min-width: $tabletBig ){
+        width: 80%;
+     }
+    }
+    
+    &__img {
+        @media screen and (min-width: $mobile){
+            background-image: url(/FELessons/project1/imgwhy/img1mob.png);
+        min-width: 258px ;
+        min-height: 162px;
+        }
+        @media screen and (min-width: $tablet){
+            background-image: url(/FELessons/project1/imgwhy/img1tablet.png);
+            min-width: 348px ;
+            min-height: 219px;
+        }
+        @media screen and (min-width: $tabletBig){
+            background-image: url(/FELessons/project1/imgwhy/img1big.png);
+            min-width: 350px ;
+            min-height: 220px;
+            margin-right: 36px;
+        }
+        @media screen and (min-width: $desktop){
+            margin-right: 110px;
+        }
+        }
+
+        &__img2 {
+            @media screen and (min-width: $tablet){
+            background-image: url(/FELessons/project1/imgwhy/img2mob.png);
+            min-width: 258px ;
+            min-height: 162px;
+            }
+            @media screen and (min-width: $tablet){
+                background-image: url(/FELessons/project1/imgwhy/img2tablet.png);
+                min-width: 348px ;
+                min-height: 219px;
+            }
+            @media screen and (min-width: $tabletBig){
+                background-image: url(/FELessons/project1/imgwhy/img2big.png);
+                min-width: 350px ;
+                min-height: 220px;
+                margin-left: 36px;
+            }
+            @media screen and (min-width: $desktop){
+                margin-left: 111px;
+            }
+            }
+
+    &__content-container {
+    margin-top: 37px;
+    padding-bottom: 60px;
+   
+    @media screen and (min-width: $tablet){
+        margin-top: 32px;
+    }
+      @media screen and (min-width: $tabletBig) {
+        margin-top: 190px;
+        //margin-left: 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+      @media screen and (min-width: $desktop) {
+        margin-top: 190px;
+    }
+    }
+    &__h2 {
+     @include h2;
+    }
+    &__description {
+        @include description;
+        min-height: 168px;
+        margin-top: 19px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @media screen and (min-width: $tablet){
+            margin-top: 24px;
+        }
+    }
+    &__description-par {
+    
+    @media screen and (min-width: $tabletBig){
+        display: flex;
+        flex-direction: column;
+       text-align: left;
+    }
+    }
+
+    &__button-container {
+        margin-top: 24px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    &__button {
+        @include button;
+        position: relative;
+        @media screen and (min-width: $tabletBig){
+            margin-left: 0;
+        } 
+    }
+
+    &__button-decor {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    }
+    &__button-name {
+        z-index: 1;
+    }
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.steps {
+    background-color: $darkgrey;
+    position: relative;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        @include container;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        @media screen and (min-width: $tabletBig){
+           flex-direction: row;
+           padding-bottom: 45px;
+        }
+
+    }
+    &__line-container {
+        display: none;
+       @media screen and (min-width: $tabletBig){
+       height: 64px;
+       background-repeat: no-repeat;
+       display: inline;
+       object-fit: cover;
+       position: absolute;
+        width: 61.71%;
+        top: 87px;
+        left: 19.145%;
+       }
+       @media screen and (min-width: $desktop){
+        width: 55.29%;
+        top: 81px;
+        left: 22.35%;
+       }
+    }
+
+    &__iconbox {
+        @media screen and (min-width: $desktop){
+            margin-top: 120px;
+        }
+    }
+
+    &__iconbox:first-child {
+       
+        @media screen and (min-width: $tabletBig){
+            margin-top: 60px;
+        }
+    }
+   
+    &__svg-container {
+        margin: 0;
+        justify-content: center;
+        display: flex;
+    }
+    &__svg {
+        width: 96px;
+        height: 96px;
+        z-index: 1;
+    }
+    &__heading {
+     @include heading2;
+    }
+    &__iconbox + &__iconbox {
+    margin-top: 59px;
+    @media screen and (min-width: $tabletBig){
+        margin-top: 60px;
+    }
+    }
+}
+.img {
+    width: 100%;
+}
+.booknow {
+    background-repeat: round;
+    @media screen and (max-width: $fullscreen) {
+        min-height: 712px;
+        background-image: url(/FELessons/project1/bgproject1/bgdesktop/bgs2.png);
+        
+     }
+     @media screen and (max-width: $tabletBig) {
+        min-height: 588px;
+        background-image: url(/FELessons/project1/bgproject1/bgtabletbig/bgs2.png);
+    }
+    @media screen and (max-width: $tablet) {
+        min-height: 616px; 
+        background-image: url(/FELessons/project1/bgproject1/bgtablet/bgs2.png);
+   }
+   @media screen and (max-width: $mobile) {
+    background-image: url(/FELessons/project1/bgproject1/bgmobile/bgs2.png);
+   }
+    &__container {
+        width: 93.75%;
+        margin: 0 auto;
+        position: relative;
+        @media screen and (min-width: $desktop) {
+            width: 83.82%;
+        }
+    }
+    &__greycard-container {
+        background: $semiopacitygrey;
+        top: 120px;
+        position: absolute;
+        @media screen and (min-width: $tabletBig){
+            margin-top: 120px;
+            max-width: 550px;
+        }
+    }
+    &__text-container {
+    @include text-container;
+    }
+    &__heading6 {
+        @include heading6;
+    }
+    &__heading5 {
+        @include heading5;
+    }
+    &__text {
+        @include text;
+    }
+    &__button {
+       @include button;
+       margin: 12px 0 0 0;
+       padding: 20px 57px 20px 56px;
+       @media screen and (min-width: $tabletBig){
+        margin: 8px 0 0 0;
+    }  
+    }
+    &__button-decor {
+        position: absolute;
+        
+        height: 100%;
+        top: 0;
+        left: 0;
+        }
+        &__button-name {
+            z-index: 1;
+        }  
+}
+.booknow2 {
+    @extend .booknow;
+    @media screen and (max-width: $fullscreen) {
+        min-height: 712px;
+        background-image: url(/FELessons/project1/bgproject1/bgdesktop/bgs3.png);
+     }
+     @media screen and (max-width: $tabletBig) {
+        min-height: 588px;
+        background-image: url(/FELessons/project1/bgproject1/bgtabletbig/bgs3.png);
+    }
+    @media screen and (max-width: $tablet) {
+        min-height: 616px; 
+        background-image: url(/FELessons/project1/bgproject1/bgtablet/bgs3.png);
+   }
+   @media screen and (max-width: $mobile) {
+    background-image: url(/FELessons/project1/bgproject1/bgmobile/bgs3.png);
+   }
+   &__greycard-container {
+    background: $semiopacitygrey;
+    top: 120px;
+    position: absolute;
+    @media screen and (min-width: $tabletBig){
+        margin-top: 120px;
+        max-width: 550px;
+        right: 0;
+    }
+}
+}
+.tourists {
+    background-repeat: round;
+    margin: 0 auto;
+    @media screen and (max-width: $fullscreen) {
+        min-height: 708px;
+        background-image: url(/FELessons/project1/bgproject1/bgdesktop/bgs4.png);
+     }
+     @media screen and (max-width: $desktop) {
+        min-height: 736px;
+     }
+     @media screen and (max-width: $tabletBig) {
+        min-height: 924px;
+        background-image: url(/FELessons/project1/bgproject1/bgtabletbig/bgs4.png);
+    }
+    @media screen and (max-width: $tablet) {
+        min-height: 980px; 
+        background-image: url(/FELessons/project1/bgproject1/bgtablet/bgs4.png);
+   }
+   @media screen and (max-width: $mobile) {
+    background-image: url(/FELessons/project1/bgproject1/bgmobile/bgs4.png);
+   }
+    
+    &__heading {
+    @include heading2;
+    width: 65.1%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: 0 auto;
+    @media screen and (min-width: $tabletBig){
+        padding-top: 120px;
+        padding-bottom: 0;
+    }
+    }
+    &__review-container {
+       width: 93.75%;
+        margin: 60px auto 0;
+        padding-bottom: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 28px;
+        @media screen and (min-width: $tabletBig){
+            flex-direction: row;
+            gap: 0;
+            max-height: 336px;
+        }
+    }
+    &__review-photo {
+        margin-top: 0;
+        @media screen and (min-width: 0px) {
+        background-image: url(/FELessons/project1/imagesprogect1/review3mob.png);
+        width: 100%;
+        min-height: 336px;
+        }
+        @media screen and (max-width: $tabletBig) {
+         background-image: url(/FELessons/project1/imagesprogect1/review3tablet.png);
+         max-width: 720px;
+         margin: 0 auto;
+        }  
+        @media screen and (min-width: $mobile) {
+            background-image: url(/FELessons/project1/imagesprogect1/review3mob.png);
+            max-width: 540px;
+            min-height: 336px;
+            margin: 0 auto;
+            }
+        @media screen and (min-width: $tabletBig) {
+            max-width: 320px;
+            background-image: url(/FELessons/project1/imagesprogect1/review3tabletbig.png);
+        }
+        @media screen and (min-width: $desktop) {
+            background-image: url(/FELessons/project1/imagesprogect1/review3desktop.png);
+            min-height: 308px;
+            max-width: 380px;
+        }
+    }
+
+    &__img {
+        width: 100% ;
+    }
+
+    &__review-text {
+        @include text-container;
+        margin: 0;
+        width: 100%;
+        justify-content: flex-start;
+        padding: 32px 60px 48px 60px;
+        @media screen and (min-width: $tabletBig) {
+        min-width: 640px;
+        width: 62.5%;
+    }
+    }
+
+    &__headingh3 {
+    @include heading5;
+    }
+
+    &__text {
+        @include text;
+    }
+
+    &__quote {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    }
+}

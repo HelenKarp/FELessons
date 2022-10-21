@@ -1,0 +1,136 @@
+.body {
+    position: relative;
+    @include height-width;
+    margin: 0 auto;
+    background: $white;
+}
+
+.header {
+    min-height: 862px;
+    
+    background-repeat: round;
+    @media screen and (max-width: $fullscreen) {
+     background-image: url(/FELessons/project1/bgproject1/bgdesktop/HeaderBackground\ \(4\).png);
+  }
+  @media screen and (max-width: $tabletBig) {
+    background-image: url(/FELessons/project1/bgproject1/bgtabletbig/HeaderBackground\ \(3\).png);
+ }
+ @media screen and (max-width: $tablet) {
+  background-image: url(/FELessons/project1/bgproject1/bgtablet/HeaderBackground\ \(2\).png);
+}
+@media screen and (max-width: $mobile) {
+  background-image: url(/FELessons/project1/bgproject1/bgmobile/HeaderBackgroundmob.png);
+}
+    &__h1 {     
+    max-width: 301px;
+
+    width: $prcnt;
+
+margin-left: calc(50% - 301px/2 + 0.5px);
+padding-top: 295px;
+margin-top: 0;
+margin-bottom: 8px;
+font-family: $josefin;
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 52px;
+text-transform: uppercase;
+color: $white;
+    }
+    &__title {
+        @include height-width;
+       
+max-width: 345px;
+
+
+white-space: nowrap;
+margin-left: calc(50% - 345px/2 + 0.5px);
+
+margin-bottom: 0;
+font-family: $josefin;
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 28px;
+letter-spacing: 0.31em;
+color: $white;
+    }
+    &__searchform {
+        
+        max-width: 540px;
+        width: 93.75%;;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 48px;
+        @media screen and (min-width: $tablet) {
+            min-width: 647px;
+        }
+        
+    }
+    &__scroll {
+       
+        max-width: 102px;
+        margin-left: calc(50% - 102px/2);
+        margin-top: 211px;
+        display: flex;
+        flex-direction: column;
+        font-family: $josefin;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.2em;
+        white-space: nowrap;
+        color: #FFFFFF;
+        margin-bottom: 120px;
+    }
+    &__svg {
+        
+        width: 14px;
+        height: 16px;
+        margin-left: calc(50% - 14px/2);
+        margin-top: 4px;
+    }
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  form {
+    position: relative;
+
+       
+  }
+  
+  input {
+    display: block;
+    width: $prcnt;
+    height: $prcnt;
+    border: 1px solid;
+    padding: 22px 36px;
+    font-family: $josefin;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0.2em;
+color: $textgrey;
+  }
+  
+  button {
+    position: absolute;
+    top: 4px;
+    right: 5px;
+    bottom: 4px;
+    color: $white;
+    background-color: $blue;
+    border: none;
+    padding: 0;
+    padding-right: 24px;
+    text-transform: uppercase;
+  }
+  .fa {
+    padding: 18px 12px 18px 24px;
+  }

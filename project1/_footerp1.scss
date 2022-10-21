@@ -1,0 +1,47 @@
+.footer {
+    background-color: $black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    &__logo {
+    @include heading3;
+    margin-top: 80px;
+    }
+    &__slogan {
+        @include slogan;
+        margin-top: 8px;
+    }
+    &__socials {
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        margin-bottom: 80px;
+        
+
+    }
+    &__item + &__item {
+        margin-left: 32px;
+    }
+    &__svg1 {
+        width: 20px;
+        height: 32px;
+        fill: $white;
+        
+        
+        :hover{
+            fill: $blue;
+            transition: all .3s linear;
+        }
+    }
+    &__svg {
+        width: 32px;
+        height: 32px;
+        fill: $white;
+        :hover{
+            fill: $blue;
+            transition: all .3s linear;
+        }
+    }
+}

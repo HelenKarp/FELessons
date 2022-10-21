@@ -1,0 +1,113 @@
+@mixin height-width {
+    width: $prcnt;
+height: $prcnt;
+}
+@mixin container {
+    width: 93.75%;
+   // max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@mixin heading3 {
+    font-family: $josefin;
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: $white;
+}
+@mixin slogan {
+    font-family: $josefin;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0.2em;
+color: $white;
+}
+
+@mixin flex-vertical-center {
+    display: flex;
+    align-items: center;
+}
+@mixin text-container {
+    display: flex;
+    align-items: flex-start;
+    
+    gap: 16px;
+    flex-direction: column;
+    width: 88.14%;
+    margin: 44px auto; 
+}
+@mixin button {
+    background: $blue;
+        border: none;
+        display: flex;
+        padding: 20px 32px;
+        position: relative;
+        margin: 24px auto;
+        top:0;
+        right: 0;
+        bottom: 0;
+}
+@mixin h2 {
+    font-family: $aleo;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    color: $white;
+    
+}
+@mixin description {
+    font-family: $josefin;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: $white;
+    
+}
+@mixin heading2 {
+    font-family: $aleo ;
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 40px;
+text-align: center;
+text-transform: capitalize;
+color: $white;
+}
+@mixin heading6 {
+    font-family: $josefin;
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 28px;
+letter-spacing: 0.1em;
+color:$white;    
+}
+@mixin heading5 {
+    font-family: $josefin;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+color:$white;    
+text-transform: uppercase;
+}
+@mixin text {
+    font-family: $josefin;
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 28px;
+letter-spacing: 0.1em;
+color: $white;
+}
