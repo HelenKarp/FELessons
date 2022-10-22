@@ -20,6 +20,16 @@
                 margin: 0 0 0 40px;
             }
         }
+        &:hover {
+            transform: scale(1.2);
+            transition: all 0.9s ease;
+           
+        }
+        &:active {
+
+            transform: rotateZ(360deg);
+            transition: all 0.9s linear;
+        }
     }
 
     &__link {
@@ -35,20 +45,24 @@
         align-items: center;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-
         color: $white;
-
         text-decoration: none;
+        &:hover {
+            color: $jj;
+            transition: all 0.3s linear;
+        }
+        &:active {
+        
+         text-decoration: underline;
+        }
+       
 
         @media screen and (min-width: $tabletBig) {
             padding-bottom: 5px;
 
         
 
-            &:hover:after {
-                background-color: $white;
-                //was $black
-            }
+            
         }
     }
 }

@@ -30,6 +30,9 @@
         @media screen and (min-width: $tabletBig){
             margin: 0 0 0 24px;
         }
+        @media screen and (min-width: $desktopbig){
+        margin: 0 200px 0 150px;
+        }
     }
 
     &__container{
@@ -125,6 +128,9 @@
       @media screen and (min-width: $desktop) {
         margin-top: 190px;
     }
+    @media screen and (min-width: $desktopbig) {
+        max-width: 1000px;
+    }
     }
     &__h2 {
      @include h2;
@@ -162,6 +168,16 @@
         @media screen and (min-width: $tabletBig){
             margin-left: 0;
         } 
+        &:hover {
+            color: $darkgrey;
+            background-color: $lightblue;
+            transform: scale(1.1);
+            transition: all .3s linear;
+        }
+        &:active {
+            transform:rotateX(360deg);
+            transition: all .9s linear;
+        }
     }
 
     &__button-decor {
@@ -303,6 +319,16 @@ img {
        @include button;
        margin: 12px 0 0 0;
        padding: 20px 57px 20px 56px;
+       &:hover {
+        color: $darkgrey;
+        background-color: $lightblue;
+        transform: scale(1.1);
+        transition: all .3s linear;
+    }
+    &:active {
+        transform:rotateX(360deg);
+        transition: all .9s linear;
+    }
        @media screen and (min-width: $tabletBig){
         margin: 8px 0 0 0;
     }  
@@ -347,6 +373,7 @@ img {
 }
 }
 .tourists {
+    //overflow: hidden;
     background-repeat: round;
     margin: 0 auto;
     @media screen and (max-width: $fullscreen) {
@@ -386,33 +413,40 @@ img {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 28px;
+        //gap: 28px;
         @media screen and (min-width: $tabletBig){
             flex-direction: row;
             gap: 0;
-            max-height: 336px;
+            min-height: 336px;
+            max-width: 1600px;
         }
     }
     &__review-photo {
         margin-top: 0;
+        background-repeat: round;
+        background-size: cover;
         @media screen and (min-width: 0px) {
         background-image: url(/FELessons/project1/imagesprogect1/review3mob.png);
         width: 100%;
         min-height: 336px;
         }
-        @media screen and (max-width: $tabletBig) {
-         background-image: url(/FELessons/project1/imagesprogect1/review3tablet.png);
-         max-width: 720px;
-         margin: 0 auto;
-        }  
         @media screen and (min-width: $mobile) {
             background-image: url(/FELessons/project1/imagesprogect1/review3mob.png);
-            max-width: 540px;
+            //min-width: 540px;
             min-height: 336px;
             margin: 0 auto;
             }
+        @media screen and (max-width: $tabletBig) {
+         background-image: url(/FELessons/project1/imagesprogect1/review3tablet.png);
+         //min-width: 720px;
+         margin: 0 auto;
+        }  
+       
         @media screen and (min-width: $tabletBig) {
             max-width: 320px;
+            display: flex;
+            align-items: flex-start;
+            margin: 0;
             background-image: url(/FELessons/project1/imagesprogect1/review3tabletbig.png);
         }
         @media screen and (min-width: $desktop) {
@@ -428,10 +462,11 @@ img {
 
     &__review-text {
         @include text-container;
+        background-color: $darkgrey;
         margin: 0;
         width: 100%;
         justify-content: flex-start;
-        padding: 32px 60px 48px 60px;
+        padding: 48px 60px 48px 60px;
         @media screen and (min-width: $tabletBig) {
         min-width: 640px;
         width: 62.5%;

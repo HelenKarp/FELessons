@@ -6,6 +6,23 @@
   background: white;
 }
 
+@-webkit-keyframes scale {
+  from {
+    transform: scale(1.3);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes scale {
+  from {
+    transform: scale(1.3);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 .header {
   min-height: 862px;
   background-repeat: round;
@@ -89,11 +106,20 @@
   color: #FFFFFF;
   margin-bottom: 120px;
 }
+.header__scroll-a {
+  color: white;
+  text-decoration: none;
+}
 .header__svg {
   width: 14px;
   height: 16px;
   margin-left: calc(50% - 7px);
   margin-top: 4px;
+  transform: scale(1.3);
+  -webkit-animation: scale 0.9s ease 45;
+          animation: scale 0.9s ease 45;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 * {
@@ -130,6 +156,16 @@ button {
   padding: 0;
   padding-right: 24px;
   text-transform: uppercase;
+}
+button:hover {
+  color: #333333;
+  background-color: #7373FD;
+  transform: scale(1.2);
+  transition: all 0.4s linear;
+}
+button:active {
+  transform: rotateY(360deg);
+  transition: all 0.9s linear;
 }
 
 .fa {
@@ -171,6 +207,11 @@ button {
 @media screen and (min-width: 1024px) {
   .why__margin {
     margin: 0 0 0 24px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .why__margin {
+    margin: 0 200px 0 150px;
   }
 }
 .why__container {
@@ -288,6 +329,11 @@ button {
     margin-top: 190px;
   }
 }
+@media screen and (min-width: 1920px) {
+  .why__content-container {
+    max-width: 1000px;
+  }
+}
 .why__h2 {
   font-family: "Aleo", serif;
   font-style: normal;
@@ -346,6 +392,16 @@ button {
   .why__button {
     margin-left: 0;
   }
+}
+.why__button:hover {
+  color: #333333;
+  background-color: #7373FD;
+  transform: scale(1.1);
+  transition: all 0.3s linear;
+}
+.why__button:active {
+  transform: rotateX(360deg);
+  transition: all 0.9s linear;
 }
 .why__button-decor {
   position: absolute;
@@ -544,6 +600,16 @@ img {
   margin: 12px 0 0 0;
   padding: 20px 57px 20px 56px;
 }
+.booknow__button:hover {
+  color: #333333;
+  background-color: #7373FD;
+  transform: scale(1.1);
+  transition: all 0.3s linear;
+}
+.booknow__button:active {
+  transform: rotateX(360deg);
+  transition: all 0.9s linear;
+}
 @media screen and (min-width: 1024px) {
   .booknow__button {
     margin: 8px 0 0 0;
@@ -654,17 +720,19 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 28px;
 }
 @media screen and (min-width: 1024px) {
   .tourists__review-container {
     flex-direction: row;
     gap: 0;
-    max-height: 336px;
+    min-height: 336px;
+    max-width: 1600px;
   }
 }
 .tourists__review-photo {
   margin-top: 0;
+  background-repeat: round;
+  background-size: cover;
 }
 @media screen and (min-width: 0px) {
   .tourists__review-photo {
@@ -673,24 +741,25 @@ img {
     min-height: 336px;
   }
 }
-@media screen and (max-width: 1024px) {
-  .tourists__review-photo {
-    background-image: url(/FELessons/project1/imagesprogect1/review3tablet.png);
-    max-width: 720px;
-    margin: 0 auto;
-  }
-}
 @media screen and (min-width: 576px) {
   .tourists__review-photo {
     background-image: url(/FELessons/project1/imagesprogect1/review3mob.png);
-    max-width: 540px;
     min-height: 336px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .tourists__review-photo {
+    background-image: url(/FELessons/project1/imagesprogect1/review3tablet.png);
     margin: 0 auto;
   }
 }
 @media screen and (min-width: 1024px) {
   .tourists__review-photo {
     max-width: 320px;
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
     background-image: url(/FELessons/project1/imagesprogect1/review3tabletbig.png);
   }
 }
@@ -711,10 +780,11 @@ img {
   flex-direction: column;
   width: 88.14%;
   margin: 44px auto;
+  background-color: #333333;
   margin: 0;
   width: 100%;
   justify-content: flex-start;
-  padding: 32px 60px 48px 60px;
+  padding: 48px 60px 48px 60px;
 }
 @media screen and (min-width: 1024px) {
   .tourists__review-text {
@@ -1007,6 +1077,14 @@ body {
     margin: 0 0 0 40px;
   }
 }
+.menu__item:hover {
+  transform: scale(1.2);
+  transition: all 0.9s ease;
+}
+.menu__item:active {
+  transform: rotateZ(360deg);
+  transition: all 0.9s linear;
+}
 .menu__link {
   position: relative;
   color: white;
@@ -1022,11 +1100,15 @@ body {
   color: white;
   text-decoration: none;
 }
+.menu__link:hover {
+  color: #1111fd;
+  transition: all 0.3s linear;
+}
+.menu__link:active {
+  text-decoration: underline;
+}
 @media screen and (min-width: 1024px) {
   .menu__link {
     padding-bottom: 5px;
-  }
-  .menu__link:hover:after {
-    background-color: white;
   }
 }/*# sourceMappingURL=stylesprogect1.css.map */
