@@ -1,0 +1,41 @@
+@mixin logo {
+    padding-top: 38px;
+    padding-bottom: 38px;
+font-family: $lato;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0.5em;
+color: $black;
+}
+@mixin h1 {
+    font-family: $redhot;
+font-style: normal;
+font-weight: 600;
+font-size: 48px;
+line-height: 64px;
+letter-spacing: 0.05em;
+color:$black;
+}
+@mixin text {
+font-family: $lato;
+font-style: normal;
+font-weight: 400;
+font-size: 19px;
+line-height: 32px;
+letter-spacing: 0.05em;
+color: $greydarktext;
+}
+@mixin h2 {
+    font-family: $redhot;
+font-style: normal;
+font-weight: 600;
+font-size: 28px;
+line-height: 166%;
+margin-top: 0;
+margin-bottom: 0;
+letter-spacing: 0.1em;
+
+color: $black;
+}
