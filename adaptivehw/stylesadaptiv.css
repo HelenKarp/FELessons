@@ -134,6 +134,14 @@ img {
   }
 }
 
+.p1 {
+  margin-top: 0;
+}
+
+.p2 {
+  margin-bottom: 0;
+}
+
 .footer {
   background: #F4F4F4;
   margin: 0 auto;
