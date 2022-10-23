@@ -5,104 +5,176 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/FELessons/assets/css/reset.css">
+    <link rel="stylesheet" href="/FELessons/assets/css/normalize.css">
+    <link rel="stylesheet" href="/FELessons/lesson4/formshw.css">
 </head>
-<body>
-  <h1> Create an Account</h1>
-  <form id="Create_an_account"  action="#" method="get">
-    <div>
-        <label for="First_name">First Name</label>
+<body class="body">
+    <section class="container">
+        <div class="form-container">
+            <div class="wrapper-container">
+    <h2 class="h2"> Create an Account</h2>
+    <form id="Create_an_account"  action="#" method="get">
+    <div class="name-container">
+        
+        <div class="name-box">
+        <label class="name" for="First_name">First Name</label>
         <input type="text" name="firstname"  required>
-    </div>
-    <div>
-        <label for="last_name">Last Name</label>
-        <input type="text" name="lastname" required>
+        </div>
     
-    </div>
-    <div>
-        <label for="email">Email</label>
-        <input type="email" name="email" required>
-    </div>
-    <div>
-        <label for="Male">Male</label>
-        <input type="radio" id="gender_choise1" name="genderm"
-        value="male">
+        <div class="name-box">
+        <label class="name" for="last_name">Last Name</label>
+        <input  type="text" name="lastname" required>
+        </div>
+        </div>
 
-        <label for="Female">Female</label>
-        <input type="radio" id="gender_choise2" name="genderf"
-        value="female">
-    </div>
-    <div>
-        <label for="Country">Country</label>
-        <select name="country" id="select_country1" size="1">
-            <option value="Kittyland">Ukraine</option>
-            <option value="Racoonland">Poland</option>
-            <option value="Dogland">Germany</option>
-            <option value="Squirrelland">England</option>
+        <div class="name-box">
+        <label class="name" for="email">Email</label>
+        <input type="email" name="email" required>
+        <span  >We'll never share your email with anyone else.</span>
+        </div>
+
+
+        <div class="radio-box">
+            <div class="radio">
+                <label class="name label1">
+                    <input type="radio" name="radio" value="male">Male
+                    <span class="select"></span>
+                </label>
+            </div>
+            <div class="radio">
+                <label class="name label1">
+                    <input type="radio" name="radio" value="female">Female
+                    <span class="select"></span>
+                </label>
+            </div>
+        </div>
+
+
+        <div class="name-container">
+            <div class="name-box">
+        <label class="name" for="Country">Country</label>
+        <select name="country" id="select_country1" aria-placeholder="Select" size="1">
+            <option value="Select">Select</option>
+            <option value="Ukraine">Ukraine</option>
+            <option value="Poland">Poland</option>
+            <option value="Germany">Germany</option>
+            <option value="England">England</option>
         </select>
-    </div>
-    <div>
-        <label for="City">City</label>
+            </div>
+            <div class="name-box">
+        <label class="name" for="City">City</label>
         <input type="text" name="city" required>
-    </div>
-    <div>
-        <button type="submit"> Sign up
-    
+            </div>
+            </div>
+
+
+    <div class="name-box">
+        <button class="button" type="submit"> Sign up
         </button>
     </div>
-  </form> 
-   <div>
-  <a href="#">Privacy policy</a>
-  <a href="#">Terms of use</a>
-   </div>
+    </form> 
 
+    <div class="policy">
+        <div>
+    <span>By clicking the 'Sign Up' button, you confirm that you accept our</span> 
+        <a href="#">Privacy Policy</a> <span>and </span>   <a href="#">Terms of Use</a>                      .
+    </div>
+    </div>
+
+
+    <div class="line"></div>
+
+    <div class="login">
+        <div>Have an account?</div>
+        <a class="a" href="#">Log In</a>
+    </div>
+</div>
+</div>
+
+
+
+<div class="form-container">
+    <div class="wrapper-container">
   <form id="Profile" action="#" method="get">
-    <h2>Profile</h2>
+    <h2 class="h2">Profile</h2>
     
-    <div>
+    <div class="boy" >
+        <img src="/FELessons/lesson4/📷 Image.png" 
+        alt="boy" height="80" >
+        <div class="right-side">
+            <div class="column">
+        <div class="photo">
+            <svg class="svg" width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.78001 1.33333L5.00001 0H9.00001L10.22 1.33333H12.3333C13.0667 1.33333 13.6667 1.93333 13.6667 2.66667V10.6667C13.6667 11.4 13.0667 12 12.3333 12H1.66668C0.933344 12 0.333344 11.4 0.333344 10.6667V2.66667C0.333344 1.93333 0.933344 1.33333 1.66668 1.33333H3.78001ZM3.66668 6.66667C3.66668 8.50667 5.16001 10 7.00001 10C8.84001 10 10.3333 8.50667 10.3333 6.66667C10.3333 4.82667 8.84001 3.33333 7.00001 3.33333C5.16001 3.33333 3.66668 4.82667 3.66668 6.66667ZM7.00001 8.8C8.17822 8.8 9.13334 7.84487 9.13334 6.66667C9.13334 5.48846 8.17822 4.53333 7.00001 4.53333C5.8218 4.53333 4.86668 5.48846 4.86668 6.66667C4.86668 7.84487 5.8218 8.8 7.00001 8.8Z" fill="#969696"/>
+                </svg>     
+        </div>
+        <span class="span">Up to 1 MB (300x300 px)</span>
+        </div>
 
-        <img src="/FELessons/lesson4/kitty.jpg" 
-        alt="Kitty Kitten" height="100" >
+
+        <div class="trashbin">
+            <svg class="svg" width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.00001 10.6667C1.00001 11.4 1.60001 12 2.33334 12H7.66668C8.40001 12 9.00001 11.4 9.00001 10.6667V2.66667H1.00001V10.6667ZM9.66668 0.666667H7.33334L6.66668 0H3.33334L2.66668 0.666667H0.333344V2H9.66668V0.666667Z" fill="#969696"/>
+                </svg>
+                
+        </div>
     </div>
-    <div>
-        <label for="Name">Name</label>
-        <input type="text" name="name" placeholder="Kitty Kitten"
-        required>
     </div>
-    <div>
-        <label for="Email">Email</label>
-        <input type="email" name="email1" 
-        placeholder="Kitty@gmail.com.ua"required>
+
+
+    <div class="name-container">
+        
+        <div class="name-box">
+        <label class="name" for="Name"> Name</label>
+        <input type="text" name="name"  required>
+        </div>
+    
+        <div class="name-box">
+        <label class="name" for="e-mail">E-mail</label>
+        <input  type="e-mail" name="e-mail" required>
+        </div>
     </div>
-    <div>
-        <label for="Country">Country</label>
-        <select name="country" id="select_country" size="1">
+
+        <div class="name-container">
+            <div class="name-box">
+        <label class="name" for="Country">Country</label>
+        <select  name="country" id="select_country" size="1">
+            <option value="none"></option>
             <option value="Kittyland">Kittyland</option>
             <option value="Racoonland">Racoonland</option>
             <option value="Dogland">Dogland</option>
             <option value="Squirrelland">Squirrelland</option>
-
         </select>
-
-   
-
-    </div>
-    <div>
-        <label for="City">City</label>
+            </div>
+            
+        <div class="name-box">
+        <label class="name" for="City">City</label>
         <input type="text" name="city1" 
-        placeholder="Catropolis"required>
-    </div>
-    <div>
-        <label for="Zip_code">Zip code</label>
+        placeholder=""required>
+        </div></div>
+
+
+    <div class="name-container">
+        <div class="name-box">
+        <label class="name" for="Zip_code">Zip code</label>
         <input type="password" name="zip_code" 
-        placeholder="1111" required>
-    </div>
-    <div>
-        <label for="Phone_number">Phone number</label>
+        placeholder="" required>
+        </div>
+    <div class="name-box">
+        <label class="name" for="Phone_number">Phone number</label>
         <input type="tel" name="phone_number" size="8" 
-        placeholder="12345678" required>
-    </div>
-    <button type="submit" >Update</button>
+        placeholder="" required>
+    </div></div>
+
+    <button class="update-button" type="submit" >  Update</button>
     
   </form>
+</div>
+</div>
+</section>
 </body>
 </html>
