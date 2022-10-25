@@ -247,8 +247,9 @@ align-items: center;
 padding: 0px;
 gap: 113px;
 margin-top: 104px;
-margin-right: 120px;
-margin-left: 120px;
+margin-left: auto;
+width: 83.3%;
+margin-right: auto;;
 }
 
 .section1__textbox {
@@ -342,6 +343,9 @@ margin-top: 100px;
 }
 .section2{
     flex-direction: unset;
+    margin-left: auto;
+    width: 83.3%;
+    margin-right: auto;
 }
 .section1__list-item3 {
     display: flex;

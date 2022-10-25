@@ -1,0 +1,34 @@
+@mixin logo {
+    font-family: $font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    white-space: nowrap;
+    color: $purple-dark;
+}
+@mixin arrow {
+    width: 20px;
+height: 20px;
+}
+@mixin svg26 {
+    width: 26px;
+    height: 26px;
+}
+@mixin label {
+    font-family: $font;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+color: $gray-dark;
+}
+@mixin capslable {
+    font-family: $font;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+text-transform: uppercase;
+color: $gray-middle;
+}
