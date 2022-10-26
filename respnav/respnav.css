@@ -13,35 +13,13 @@
   flex-direction: row;
 }
 
-.checkbox {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  z-index: 1;
-}
-
 .ball {
   height: 20px;
   width: 20px;
   position: absolute;
   top: 5px;
-  right: 16px;
+  left: 50px;
   z-index: 1;
-}
-
-input {
-  opacity: 0;
-  position: absolute;
-  height: 30px;
-  width: 30px;
-}
-
-input:checked .navigation {
-  width: 220px;
-}
-
-input:checked .arrow-box {
-  opacity: 0;
 }
 
 .arrow-box {
@@ -54,11 +32,54 @@ input:checked .arrow-box {
 .arrow-box__svg {
   width: 20px;
   height: 20px;
+  fill: #392C72;
+}
+.arrow-box__label {
+  width: 40px;
+  height: 40px;
+}
+
+.menu__toggle {
+  opacity: 0;
+}
+
+.menu__btn {
+  display: flex;
+  align-items: center;
+  left: 75px;
+  top: 25px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+}
+
+.menu__btn > span::before {
+  content: url(/FELessons/respnav/img/Vector.png);
+}
+
+.menu__btn > span::after {
+  content: url(/FELessons/respnav/img/Vector\(1\).png);
+  opacity: 0;
+}
+
+.logo1 {
+  width: 32px;
+  height: 32px;
+  fill: #4F4F4F;
 }
 
 .logo {
-  width: 32px;
-  height: 32px;
+  width: 26px;
+  height: 26px;
   fill: #4F4F4F;
 }
 
@@ -79,6 +100,11 @@ input:checked .arrow-box {
   align-items: center;
   gap: 20px;
   margin: 11px 30px 49px 30px;
+}
+
+.hamburger-menu {
+  position: absolute;
+  left: -2%;
 }
 
 .divider__flex {
@@ -110,10 +136,27 @@ input:checked .arrow-box {
   color: #828282;
 }
 
+#menu__toggle:checked ~ .navigation {
+  width: 220px;
+}
+
+#menu__toggle:checked ~ .menu__btn > span::before {
+  opacity: 0;
+}
+
+#menu__toggle:checked ~ .menu__btn > span::after {
+  opacity: 1;
+}
+
 .navigation {
   width: 86px;
+  max-width: 220px;
   background-color: #ffffff;
+  display: block;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+  list-style: none;
+  text-align: start;
+  top: 0;
   height: 100%;
   position: fixed;
   transition: 0.5s ease-in-out;
@@ -151,12 +194,14 @@ input:checked .arrow-box {
   margin: 0 auto 5px 15px;
   height: 20px;
 }
+.navigation:hover .arrow-box {
+  z-index: 0;
+}
 .navigation:hover + .header-container {
   width: 81.25%;
 }
 
 .navigation ul {
-  top: 217px;
   left: 0;
   width: 100%;
   margin-bottom: 46px;
@@ -209,11 +254,6 @@ input:checked .arrow-box {
   justify-content: flex-start;
 }
 
-.navigation:active,
-.navigation:hover {
-  width: 220px;
-}
-
 .navigation ul li:hover .title {
   color: #ffffff;
 }
@@ -224,6 +264,7 @@ input:checked .arrow-box {
 
 .header-container {
   background-color: #ffffff;
+  transition: all 0.5s ease-in-out;
   width: 90.55%;
   min-height: 80px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
@@ -231,4 +272,53 @@ input:checked .arrow-box {
   position: absolute;
   right: 25px;
   border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.header-container__iconbox-left {
+  display: flex;
+  max-width: 163px;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-top: 27px;
+  gap: 20px;
+}
+.header-container__iconbox-right {
+  max-width: 374px;
+  margin-top: 22px;
+  margin-right: 20px;
+  gap: 50px;
+  display: flex;
+  margin-bottom: 22px;
+  align-items: center;
+}
+.header-container__iconbox-right1 {
+  max-width: 120px;
+  gap: 20px;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4F4F4F;
+}
+.header-container__iconbox-right2 {
+  max-width: 118px;
+  gap: 20px;
+  display: flex;
+}
+
+.svgheader {
+  width: 26px;
+  height: 26px;
+  fill: #4F4F4F;
+}
+.svgheader:hover {
+  fill: #9E8CFC;
+}
+
+.bg {
+  margin-top: 178px;
+  margin-left: 220px;
 }/*# sourceMappingURL=respnav.css.map */

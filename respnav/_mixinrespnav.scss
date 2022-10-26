@@ -10,6 +10,7 @@
 @mixin arrow {
     width: 20px;
 height: 20px;
+fill: #392C72;
 }
 @mixin svg26 {
     width: 26px;
@@ -31,4 +32,13 @@ font-size: 16px;
 line-height: 20px;
 text-transform: uppercase;
 color: $gray-middle;
+}
+@mixin english {
+    font-family: $font;
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+color: $gray-dark;
+
 }

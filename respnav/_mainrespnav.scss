@@ -12,55 +12,73 @@
     position: relative;
     display: flex;
     flex-direction: row;
+}
 
-   
-}
-.checkbox {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    z-index: 1;
-}
 .ball {
     height: 20px;
     width: 20px;
     position: absolute;
     top:5px;
-    right: 16px;
+    left: 50px;
     z-index: 1;
 }
-input {
-    opacity: 0;
-    
-    position: absolute;
-    height: 30px;
-    width: 30px;
-    
-}
-input:checked  {
-     & .navigation {
-        width: 220px;
-     }
-}
-input:checked .arrow-box {
-    opacity: 0;
-    
-}
+
+
 .arrow-box {
     width: 40px;
     height: 40px;
-position: absolute;
-
+    position: absolute;
     left: 78px;
     top: 36px;
-&__svg {
-    @include arrow;
+    &__svg {
+    @include arrow;  
+}
+&__label {
+    width: 40px;
+    height: 40px;
+}
+}
+.menu__toggle {
+    opacity: 0;
+}
+.menu__btn {
+    display: flex;
+    align-items: center;
+    //position: fixed;
+    left: 75px;
+    top: 25px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+}
+.menu__btn > span::before {
+    content: url(/FELessons/respnav/img/Vector.png);
     
 }
+.menu__btn > span::after {
+    content: url(/FELessons/respnav/img/Vector\(1\).png);
+    opacity: 0;
+    
+    
 }
-.logo {
+.logo1 {
     width: 32px;
     height: 32px;
+    fill: $gray-dark;
+    
+}
+.logo {
+    width: 26px;
+    height: 26px;
     fill: $gray-dark;
     
 }
@@ -80,6 +98,11 @@ position: absolute;
     align-items: center;
     gap: 20px;
     margin: 11px 30px 49px 30px;
+}
+.hamburger-menu {
+    position: absolute;
+    //top: 15px;
+    left: -2%;
 }
 .divider {
     
@@ -108,14 +131,29 @@ position: absolute;
         
     }
 }
+#menu__toggle:checked ~ .navigation {
+    width: 220px;
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+    opacity: 0;
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+    //margin-right: 5%;
+    
+    opacity: 1;
+}
 
 
 .navigation {
     width: 86px;
+    max-width: 220px;
     //width: 5.972%;
     background-color:  $white;
-    
+    display: block;
     box-shadow: $box-shadow;
+    list-style: none;
+    text-align: start;
+    top: 0;
     height: 100%;
     position: fixed;
     transition: 0.5s ease-in-out;
@@ -142,7 +180,10 @@ position: absolute;
         margin: 0 auto 5px 15px;
         height: 20px;
         
-       }
+    }
+    &:hover  .arrow-box  {
+        z-index: 0;
+    }
     &:hover + .header-container {
         width: 81.25%;
     }
@@ -150,13 +191,10 @@ position: absolute;
 
 
 .navigation ul {
-   
-    top:  217px;
     left: 0;
     width: 100%;
     margin-bottom: 46px;
-    
-    
+        
 }
 .navigation ul li {
     position: relative;
@@ -199,11 +237,6 @@ position: absolute;
     align-items: center;
     justify-content: flex-start;
 }
-.navigation:active,
-.navigation:hover{
-    width: 220px;
-}
-
 
 .navigation ul li:hover .title {
 color: $white;
@@ -214,6 +247,7 @@ fill: $white;
 
 .header-container {
     background-color: $white;
+    transition: all 0.5s ease-in-out;
     width: 90.55%;
     min-height: 80px;
     box-shadow: $box-shadow;
@@ -221,4 +255,48 @@ fill: $white;
     position: absolute;
     right: 25px;
     border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    &__iconbox-left {
+        display: flex;
+        max-width: 163px;
+        justify-content: space-between;
+        margin-left: 20px;
+        margin-top: 27px;
+        gap: 20px;
+    }
+    &__iconbox-right {
+        max-width: 374px;
+        margin-top: 22px;
+        margin-right: 20px;
+        gap: 50px;
+        display: flex;
+        margin-bottom: 22px;
+    align-items: center;
+        
+    }
+    &__iconbox-right1 {
+    max-width: 120px;
+    gap: 20px;
+    display: flex;
+    @include english;
+    }
+    &__iconbox-right2 {
+        max-width: 118px;
+        gap: 20px;
+        display: flex;
+        
+        }
+}
+.svgheader {
+    @include svg26;
+    fill: $gray-dark;
+    &:hover {
+        fill: $blueviolet;
+    }
+}
+.bg {
+    //position: absolute;
+    margin-top: 178px;
+    margin-left: 220px ;
 }
