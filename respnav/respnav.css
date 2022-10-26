@@ -22,23 +22,6 @@
   z-index: 1;
 }
 
-.arrow-box {
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  left: 78px;
-  top: 36px;
-}
-.arrow-box__svg {
-  width: 20px;
-  height: 20px;
-  fill: #392C72;
-}
-.arrow-box__label {
-  width: 40px;
-  height: 40px;
-}
-
 .menu__toggle {
   opacity: 0;
 }
@@ -104,7 +87,7 @@
 
 .hamburger-menu {
   position: absolute;
-  left: -2%;
+  left: -2.7%;
 }
 
 .divider__flex {
@@ -140,12 +123,51 @@
   width: 220px;
 }
 
-#menu__toggle:checked ~ .menu__btn > span::before {
+#menu__toggle:checked ~ .header-container .menu__btn > span::before {
   opacity: 0;
 }
 
-#menu__toggle:checked ~ .menu__btn > span::after {
+#menu__toggle:checked ~ .header-container .menu__btn > span::after {
   opacity: 1;
+}
+
+#menu__toggle:checked ~ .header-container {
+  width: 81.25%;
+}
+
+#menu__toggle:checked ~ .header-container .hamburger-menu {
+  left: -5%;
+}
+
+#menu__toggle:checked ~ .navigation .divider__flex {
+  opacity: 0;
+}
+
+#menu__toggle:checked ~ .navigation .divider__span {
+  opacity: 1;
+  margin: 0 auto 5px 15px;
+  height: 20px;
+}
+
+#menu__toggle:checked ~ .navigation .logo-box::after {
+  content: "LightBoard";
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  white-space: nowrap;
+  color: #392C72;
+}
+
+#menu__toggle:checked ~ .navigation .dash-box::after {
+  content: "Dashboard";
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #4F4F4F;
 }
 
 .navigation {
@@ -193,9 +215,6 @@
   opacity: 1;
   margin: 0 auto 5px 15px;
   height: 20px;
-}
-.navigation:hover .arrow-box {
-  z-index: 0;
 }
 .navigation:hover + .header-container {
   width: 81.25%;

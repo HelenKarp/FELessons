@@ -24,20 +24,7 @@
 }
 
 
-.arrow-box {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    left: 78px;
-    top: 36px;
-    &__svg {
-    @include arrow;  
-}
-&__label {
-    width: 40px;
-    height: 40px;
-}
-}
+
 .menu__toggle {
     opacity: 0;
 }
@@ -102,7 +89,7 @@
 .hamburger-menu {
     position: absolute;
     //top: 15px;
-    left: -2%;
+    left: -2.7%;
 }
 .divider {
     
@@ -134,13 +121,35 @@
 #menu__toggle:checked ~ .navigation {
     width: 220px;
 }
-#menu__toggle:checked ~ .menu__btn > span::before {
+#menu__toggle:checked ~ .header-container .menu__btn > span::before {
     opacity: 0;
 }
-#menu__toggle:checked ~ .menu__btn > span::after {
+#menu__toggle:checked ~ .header-container .menu__btn > span::after {
     //margin-right: 5%;
     
     opacity: 1;
+}
+#menu__toggle:checked ~ .header-container {
+    width: 81.25%;
+}
+#menu__toggle:checked ~ .header-container .hamburger-menu {
+    left: -5%;
+}
+#menu__toggle:checked ~ .navigation .divider__flex {
+    opacity: 0;
+}
+#menu__toggle:checked ~ .navigation .divider__span {
+    opacity: 1;
+        margin: 0 auto 5px 15px;
+        height: 20px;
+}
+#menu__toggle:checked ~ .navigation .logo-box::after {
+    content: "LightBoard";
+    @include logo;
+}
+#menu__toggle:checked ~ .navigation .dash-box::after {
+    content: "Dashboard";
+        @include label;
 }
 
 
@@ -180,9 +189,6 @@
         margin: 0 auto 5px 15px;
         height: 20px;
         
-    }
-    &:hover  .arrow-box  {
-        z-index: 0;
     }
     &:hover + .header-container {
         width: 81.25%;
