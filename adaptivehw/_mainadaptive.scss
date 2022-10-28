@@ -31,6 +31,13 @@ img {
     min-height: 100px;
     &__logo {
     @include logo;
+    @media screen and (max-width: $desktop) {
+        padding-top: 18px;
+        padding-bottom: 68px;
+    }
+    @media screen and (max-width: $tablet){
+      padding-bottom: 18px;
+    }
     }
 }
 .overview {
@@ -44,7 +51,7 @@ img {
     display: flex;
     flex-direction: column;
     gap: 90px;
-    @media screen and (max-width: $desktop) {
+    @media screen and (max-width: $mobile) {
     gap: 70px;
     }
     }

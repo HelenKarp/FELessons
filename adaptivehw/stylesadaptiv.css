@@ -50,6 +50,17 @@ img {
   letter-spacing: 0.5em;
   color: #000000;
 }
+@media screen and (max-width: 1440px) {
+  .header__logo {
+    padding-top: 18px;
+    padding-bottom: 68px;
+  }
+}
+@media screen and (max-width: 770px) {
+  .header__logo {
+    padding-bottom: 18px;
+  }
+}
 
 .overview {
   width: 100%;
@@ -70,7 +81,7 @@ img {
   flex-direction: column;
   gap: 90px;
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 320px) {
   .overview__container {
     gap: 70px;
   }
