@@ -611,6 +611,7 @@
 .post {
   display: flex;
   overflow: hidden;
+  width: 100%;
 }
 .post__photo {
   max-width: 100%;
