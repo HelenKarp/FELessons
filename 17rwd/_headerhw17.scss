@@ -1,79 +1,47 @@
 .header {
     display: flex;
-    flex-direction: column;
+    overflow: hidden;
     justify-content: center;
     align-items: center;
     padding: 0 auto;
-    position: absolute;
     margin: 0 auto;
-    //max-width: 1440px;
-    width: 100%;
-    max-height: 100px;
-    height: 100%;
     @media screen and (max-width: 768px) {
-       max-height: 60px; 
-       height: 100%;
-         }
-   
+    max-height: 60px; 
+    height: 100%;
+        }
 
     &__container {
         //max-width: 1170px;//
         max-height: 20px;
-        width: 100%;
-        height: 100%;
+        width: 81.25%;
         margin: 40px auto;
-        @media screen and (max-width: 768px) {
+        display: flex;
+        align-items: center;
+        @media screen and (max-width: $desktop) {
+            width: 91.146%;
+            margin-left: 9%;
+            margin-right: 9%;
             
-            margin: 20px auto ;
-             }
-    }
-    &__logo {
-        margin-left: 9%;
-        @media screen and (max-width: 900px) {
-            left: 3%;
-             }
-        @media screen and (max-width: 768px) {
-               
-                margin-left: 34px ;
-                 }
-        @media screen and (max-width: 320px) {
-               
-            margin-left: 10px ;
-
-                     }
-
-             
-    }
+            }
+            @media screen and (max-width: $tablet) {
+            width: 93.75%;
+            margin: 20px auto;
+            }
+            
+            }
+    
     &__menu {
         display: flex;
         flex-direction: row;
         align-items: center;
-        //margin: 0 auto;
-        //margin-left: 35%;
         padding: 0px;
         gap: 3%;
-       // isolation: isolate;
         justify-content: right;
-        position: absolute;
-        ///max-width: 500px;
-        //max-height: 18px;
         width: 100%;
         height: 100%;
-        right: 9%;
-        //left: 569.79px;
-        top: 0;
-        //top 41px
          @media screen and (max-width: 768px) {
        display: none; 
         }
-        @media screen and (max-width: 900px) {
-            right: 3%;
-             }
-        @media screen and (max-width: 320px) {
-               
-        right: 10px ;
-                
-                         }
     }
    
     &__menu-item {
@@ -92,7 +60,7 @@
      
      } 
      &__menu-item:hover + &__width {
-        
+        transition: all .4s linear;
        opacity: 1;
        
     }
@@ -118,21 +86,21 @@
     &__burger-search {
         opacity: 0;
         //display: none;
-       
         @media screen and (max-width: 768px) {
             display:flex; 
             opacity: 1;
             position: absolute;
             top: 20px;
-            
-            //max-width: 94px;
             justify-content: right;
             right: 34px ;
             width: 100%;
             height: 100%;
             max-height: 21px;
             gap: 40px;
-             }
+            }
+            @media screen and (min-width: 769px) {
+            width: 0;
+            }
     }
     &__burger {
         opacity: 0;
@@ -146,10 +114,9 @@
             max-width: 34px;
             width: 100%;
             
-             }
-
-   }
-   &__burger-line {
+            }
+        }
+&__burger-line {
     opacity: 0;
     //display: none;
     @media screen and (max-width: 768px) {
@@ -159,9 +126,9 @@
         height: 1px;
         width: 100%;
         
-         }
-   }
-   &__burger-line2 {
+        }
+    }
+    &__burger-line2 {
     opacity: 0;
     @media screen and (max-width: 768px) {
         margin: 9px 0;
@@ -170,52 +137,50 @@
         height: 1px;
         width: 100%;
         
-         }
-   }
+        }
+    }
 
 
     &__screen {
-        position: absolute;
-        //max-width: 1440px;
         min-height: 600px;
         max-height: 600px;
-
-        width: 100%;
-        height: 100%;
         margin: 0 auto;
-        left: 0px;
-        top: 100px;
+        background-size: cover;
         background-image: url(/FELessons/17rwd/bg-image.png);
-        //background-size: 100%;
         background-repeat: no-repeat;
-        //padding-right: 9%;
             @media screen and (max-width: 768px) {
-                top: 60px;
                 max-height: 320px;
                 min-height: 320px;
             }
-            @media screen and (max-width: 573px) {
+            @media screen and (max-width: $mobile) {
                 min-height: 500px;
                 max-height: 500px;
             }
     }
     &__par {
        // position: absolute;
-       margin-left: 9%;
+        margin-left: 9%;
         max-width: 770px;
         max-height: 120px;
-        //width: 100%;
-        left: 135px;
-        margin-top: 100px;
-
         font-family: $redfont400;
         font-weight: 600;
         font-style: normal;
         padding: 0;
+        padding-top: 100px;
         font-size: 48px;
         line-height: 64px;
         letter-spacing: 0.05em;
-
         color: $black;
+        @media screen and (max-width: $desktop) {
+            padding-top: 30px;
+                
+        }
+        @media screen and (max-width: $tablet) {
+            padding-top: 70px;
+            margin-left: 3.125%;
+        }
+        @media screen and (max-width: $mobile) {
+        
+        }
     }
 }
