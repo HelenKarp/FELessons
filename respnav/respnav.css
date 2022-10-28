@@ -74,21 +74,22 @@
 }
 
 .dash {
-  width: 26px;
-  height: 26px;
+  width: 28px;
+  height: 28px;
 }
 
 .dash-box {
   display: flex;
   align-items: center;
   gap: 20px;
-  margin: 11px 30px 49px 30px;
+  margin: 11px 28px 49px 28px;
 }
 
 .hamburger-menu {
   position: absolute;
-  left: -2.7%;
-  top: -6%;
+  z-index: 1;
+  left: 76px;
+  top: 23px;
 }
 
 .divider__flex {
@@ -136,12 +137,21 @@
   width: 81.25%;
 }
 
-#menu__toggle:checked ~ .header-container .hamburger-menu {
-  left: -5%;
+#menu__toggle:checked ~ .hamburger-menu {
+  left: 185px;
+}
+
+#menu__toggle:checked ~ .hamburger-menu .menu__btn span::before {
+  opacity: 0;
+}
+
+#menu__toggle:checked ~ .hamburger-menu .menu__btn span::after {
+  opacity: 1;
 }
 
 #menu__toggle:checked ~ .navigation .divider__flex {
   opacity: 0;
+  margin: 0;
 }
 
 #menu__toggle:checked ~ .navigation .divider__span {
@@ -161,6 +171,10 @@
   color: #392C72;
 }
 
+#menu__toggle:checked ~ .navigation .logo-box {
+  margin-left: 13.5px;
+}
+
 #menu__toggle:checked ~ .navigation .dash-box::after {
   content: "Dashboard";
   font-family: "Montserrat", sans-serif;
@@ -169,6 +183,19 @@
   font-size: 16px;
   line-height: 20px;
   color: #4F4F4F;
+}
+
+#menu__toggle:checked ~ .navigation .dash-box {
+  margin-left: 15px;
+}
+
+#menu__toggle:checked ~ .navigation ul li .icon {
+  min-width: 0;
+  margin: 0 20px 0 15px;
+}
+
+#menu__toggle:checked ~ .navigation ul li .ball {
+  left: 35px;
 }
 
 .navigation {
@@ -199,6 +226,16 @@
   white-space: nowrap;
   color: #392C72;
 }
+.navigation:hover .logo-box {
+  margin-left: 13.5px;
+}
+.navigation:hover ul li .icon {
+  min-width: 0;
+  margin: 0 20px 0 15px;
+}
+.navigation:hover ul li .ball {
+  left: 35px;
+}
 .navigation:hover .dash-box::after {
   content: "Dashboard";
   font-family: "Montserrat", sans-serif;
@@ -207,6 +244,9 @@
   font-size: 16px;
   line-height: 20px;
   color: #4F4F4F;
+}
+.navigation:hover .dash-box {
+  margin-left: 15px;
 }
 .navigation:hover .divider__flex {
   opacity: 0;
@@ -217,7 +257,14 @@
   margin: 0 auto 5px 15px;
   height: 20px;
 }
-.navigation:hover + .header-container {
+.navigation:hover + .hamburger-menu .menu__btn span::before {
+  opacity: 0;
+}
+.navigation:hover + .hamburger-menu .menu__btn span::after {
+  opacity: 1;
+  left: 109px;
+}
+.navigation:hover ~ .header-container {
   width: 81.25%;
 }
 
