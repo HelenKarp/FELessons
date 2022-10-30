@@ -1,0 +1,99 @@
+.body {
+    background-color: $purple;
+    margin: 0 auto;
+}
+.section {
+@include section;
+}
+
+.card {
+    @include card;
+    &:hover {
+    @include cardhover;
+    height: 673px;
+    }
+    &:hover .card__footer {
+    padding: 44px 0 30px;
+    }
+    &:hover .card__body {
+    margin-bottom: 0;
+    }
+    &:hover .button {
+    position: absolute;
+    top: 544px;
+    background-color: $coral;
+    }
+    &:hover .card__ball {
+    opacity: 1;
+    }
+    
+    &__ball {
+        @include ball;
+    }
+    &__ball-p {
+        @include ball-p;
+        
+    }
+    &__ball-right {
+        position: absolute;
+        top: 17px;
+    }
+    &__shadow {
+        box-shadow: $shadow;
+        height: 30px;
+        width: 70px;
+        border-radius: 15px;
+        margin-left: 31px;
+    }
+    &__popular {
+    @include popular2;
+    }
+
+    &__svg-balls {
+        margin-bottom: 38px;
+    }
+    &__heading {
+        @include heading;
+    }
+
+    &__pricing {
+    @include pricing;
+    }
+
+    &__pricing-dollar {
+    @include dollar;
+    }
+    &__pricing-price {
+    @include price;
+    @include pricing-price;
+    }
+    &__pricing-hour {
+        @include pricing-hour;
+    }
+    &__direction {
+    @include h2;
+    }
+    &__body {
+    @include card-body;
+    }
+    &__svg {
+    @include svg;
+    }
+    &__list-box {
+    margin-bottom: 60px;
+    }
+    &__list {
+    @include list;
+    }
+    &__list-item {
+        @include listitem;
+    }
+    &__footer {
+    @include footertext;
+    }
+}
+.button {
+    @include button;
+    position: absolute;
+    top: 590px;
+}

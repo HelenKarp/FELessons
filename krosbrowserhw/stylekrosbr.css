@@ -1,0 +1,216 @@
+.body {
+  background-color: #9789F9;
+  margin: 0 auto;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  gap: 30px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #F5F3F9;
+  margin-top: 151px;
+  min-height: 611px;
+  min-width: 370px;
+}
+.card:hover {
+  transform: scaleX(1.08);
+  transition: all 0.4s linear;
+  margin-top: 120px;
+  z-index: 1;
+  height: 673px;
+}
+.card:hover .card__footer {
+  padding: 44px 0 30px;
+}
+.card:hover .card__body {
+  margin-bottom: 0;
+}
+.card:hover .button {
+  position: absolute;
+  top: 544px;
+  background-color: #FD8D7B;
+}
+.card:hover .card__ball {
+  opacity: 1;
+}
+.card__ball {
+  opacity: 0;
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  top: 10px;
+  left: 302px;
+  width: 149px;
+  height: 54px;
+}
+.card__ball-p {
+  font-family: "Bebas Neue", cursive;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.08em;
+  color: #FFFFFF;
+  background-color: #FD8D7B;
+  border-radius: 24px;
+  display: flex;
+  padding-left: 18px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-items: center;
+}
+.card__ball-right {
+  position: absolute;
+  top: 17px;
+}
+.card__shadow {
+  box-shadow: 0px 0px 20px #8677EF;
+  height: 30px;
+  width: 70px;
+  border-radius: 15px;
+  margin-left: 31px;
+}
+.card__popular {
+  font-family: "Bebas Neue", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  position: absolute;
+  background-image: url(/FELessons/krosbrowserhw/tooltip\ bg.png);
+  height: 30px;
+  width: 101px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+}
+.card__svg-balls {
+  margin-bottom: 38px;
+}
+.card__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 40px 108px 30px 108px;
+}
+.card__pricing {
+  display: flex;
+  flex-direction: row;
+  max-height: 50px;
+}
+.card__pricing-dollar {
+  font-family: "Bebas Neue", cursive;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  color: #181818;
+}
+.card__pricing-price {
+  font-family: "Bebas Neue", cursive;
+  font-size: 60px;
+  line-height: 60px;
+  letter-spacing: 0.08em;
+  color: #000000;
+  display: flex;
+  align-items: flex-start;
+}
+.card__pricing-hour {
+  font-family: "Bebas Neue", cursive;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.08em;
+  color: #000000;
+  display: flex;
+  align-items: flex-end;
+}
+.card__direction {
+  font-family: "Bebas Neue", cursive;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #000000;
+}
+.card__body {
+  background-image: url(/FELessons/krosbrowserhw/bg-image\ \(1\).png);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 39px;
+}
+.card__svg {
+  width: 30px;
+  height: 30px;
+  margin: 40px 168px 40px 172px;
+}
+.card__list-box {
+  margin-bottom: 60px;
+}
+.card__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 30px;
+}
+.card__list-item {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+  letter-spacing: 0.04em;
+  color: #000000;
+}
+.card__footer {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #A9A9A9;
+}
+
+.button {
+  font-family: "Bebas Neue", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  padding: 20px 50px;
+  background-color: #6FCFFB;
+  border-radius: 30px;
+  max-width: 200px;
+  border: none;
+  white-space: nowrap;
+  margin: 0 auto;
+  position: absolute;
+  top: 590px;
+}/*# sourceMappingURL=stylekrosbr.css.map */
