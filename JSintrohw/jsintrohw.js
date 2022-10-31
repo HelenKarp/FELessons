@@ -1,0 +1,17 @@
+let userName = prompt ("Enter your name");
+let Name$ = ("kit");
+let hi = alert (`Hello ${userName}!`);
+let userAge = prompt ("Enter your birth year");
+const thisYear = ("2022");
+let age = alert (thisYear - userAge);
+let rectangleSideSize = prompt ("Enter rectangle side size, please");
+let Per = alert (4 * rectangleSideSize);
+const Pi = ("3.141");
+let Rad = prompt ("Enter your radius");
+let CircleLenth = alert ( Pi * (Rad * Rad));
+let distance = prompt ("Enter your distance (km)");
+let time = prompt ("Enter amount of hours which do you want to spent on driving");
+let speed = alert (distance / time);
+const euro = ("0.99");
+let dollar$ = prompt ("How many dollars do you want to exchange? ");
+let result = alert ( euro * dollar$);
