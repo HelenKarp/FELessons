@@ -34,17 +34,21 @@
 }
 .card:hover .card__footer {
   padding: 44px 0 30px;
+  transition: all 0.4s linear;
 }
 .card:hover .card__body {
   margin-bottom: 0;
+  transition: all 0.4s linear;
 }
 .card:hover .button {
   position: absolute;
   top: 544px;
   background-color: #FD8D7B;
+  transition: all 0.4s linear;
 }
 .card:hover .card__ball {
   opacity: 1;
+  transition: all 0.4s linear;
 }
 .card__ball {
   opacity: 0;

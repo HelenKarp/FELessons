@@ -8,6 +8,11 @@ text-align: center;
 letter-spacing: 0.04em;
 color: #FFFFFF;
 }
+@mixin animation {
+    -webkit-transition: all .4s linear;
+-o-transition: all .4s linear;
+transition: all .4s linear;
+}
 
 @mixin h2 {
     font-family: 'Bebas Neue', cursive;

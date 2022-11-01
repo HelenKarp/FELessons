@@ -14,17 +14,21 @@
     }
     &:hover .card__footer {
     padding: 44px 0 30px;
+    @include animation;
     }
     &:hover .card__body {
     margin-bottom: 0;
+    @include animation;
     }
     &:hover .button {
     position: absolute;
     top: 544px;
     background-color: $coral;
+    @include animation;
     }
     &:hover .card__ball {
     opacity: 1;
+    @include animation;
     }
     
     &__ball {
