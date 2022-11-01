@@ -183,7 +183,7 @@ width: 81.25%;
      &__info {
         
     width: 50%;
-    max-height: 300px;
+    //max-height: 300px;
     display: flexbox;
     align-items: center;
     //margin-top: 85px;
@@ -295,6 +295,9 @@ width: 81.25%;
             align-items: flex-start;
             padding-top: 0;
             
+        }
+        @media screen and (min-width: $tablet) {
+            margin-bottom: 50px;
         }
         
     }
@@ -671,6 +674,9 @@ line-height: 1.5;
 @media screen and (max-width: $mobile) {
     //top: 130px;
 }
+}
+&__box2-p {
+margin-top: 0;
 }
 &__svg {
     fill: $grey500;
