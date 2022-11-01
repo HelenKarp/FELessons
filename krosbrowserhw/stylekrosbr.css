@@ -154,6 +154,7 @@
   text-align: center;
   letter-spacing: 0.04em;
   color: #000000;
+  text-transform: uppercase;
 }
 .card__body {
   background-image: url(/FELessons/krosbrowserhw/bg-image\ \(1\).png);
