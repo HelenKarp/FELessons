@@ -15,7 +15,7 @@ transition: all .4s linear;
 }
 
 @mixin h2 {
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue Book', cursive;
 font-size: 24px;
 line-height: 28px;
 text-align: center;
@@ -24,7 +24,7 @@ color: #000000;
 }
 
 @mixin price {
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue Thin', cursive;
 font-size: 60px;
 line-height: 60px;
 letter-spacing: 0.08em;
@@ -32,7 +32,7 @@ color: #000000;
 }
 
 @mixin dollar {
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue Thin', cursive;
     font-weight: 300;
 font-size: 24px;
 line-height: 28px;
@@ -72,7 +72,7 @@ color: #A9A9A9;
 }
 
 @mixin P {
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue Book', cursive;
 font-size: 24px;
 line-height: 24px;
 letter-spacing: 0.08em;

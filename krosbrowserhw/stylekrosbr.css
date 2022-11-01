@@ -61,7 +61,7 @@
   height: 54px;
 }
 .card__ball-p {
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue Book", cursive;
   font-size: 24px;
   line-height: 24px;
   letter-spacing: 0.08em;
@@ -121,14 +121,14 @@
   max-height: 50px;
 }
 .card__pricing-dollar {
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue Thin", cursive;
   font-weight: 300;
   font-size: 24px;
   line-height: 28px;
   color: #181818;
 }
 .card__pricing-price {
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue Thin", cursive;
   font-size: 60px;
   line-height: 60px;
   letter-spacing: 0.08em;
@@ -148,7 +148,7 @@
   align-items: flex-end;
 }
 .card__direction {
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue Book", cursive;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
