@@ -114,10 +114,7 @@ let zero = 0;
 
 for (let numsize = 1; numsize <= 10; numsize++) {
 let dig = prompt("Enter one of your 10 numbers, please");
-if (dig = "") {
-   alert("It's not a correct symbol)")
-   }
-else  if (dig = Number) {
+
      if (dig % 2 == 0) {
       ev = ++ev
     }
@@ -138,9 +135,7 @@ else  if (dig = Number) {
         zero = ++zero
     }
    }
-    
 
-}
 
 alert(`You have entered ${ev} even numbers, ${odd} odd numbers, ${negative} negative numbers, ${positive} positive numbers, ${zero} numbers equal to zero `)
 
