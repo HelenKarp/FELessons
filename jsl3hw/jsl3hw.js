@@ -11,7 +11,7 @@ if (age >= 0 && age <= 11) {
     alert('You put not a correct answer!');
   }
 
-  const tap = prompt('Enter any number from 0 to 9', '');
+const tap = prompt('Enter any number from 0 to 9', '');
 
   switch (tap) {
     case '0':
@@ -77,16 +77,15 @@ for (let i = number1; i < number2; i++) {
  
   let pal = +prompt("Enter 5-digit number");
   
-  //function palindrome(num) {
-       // var tmp = num, res = 0, dig;
-       // while (tmp) {
-            ////dig = tmp % 10;
-            //res = res * 10 + dig;
-            //tmp = (tmp - dig) / 10;
-       //}
-       // return res == num;
-   //}
-    //alert(palindrome());
+  let dig = prompt("enter number 5x size")
+
+    function foo(a) {
+    a += "";
+    for (var b = 0; b < a.length / 2; b++)
+        if (a.substr(b, 1) != a.substr(-(b + 1), 1)) return false;
+    return true
+    };
+    alert(dig + foo(dig));
     
 
     var buy = prompt("Enter the value of your purchase");
@@ -105,6 +104,46 @@ for (let i = number1; i < number2; i++) {
        discountedBuy = buy - (buy / 100 * 7);
     } 
     alert (`Sum of your purchase with a discount will be ${discountedBuy}`);
+
+
+    let ev = 0;
+let odd = 0;
+let positive = 0;
+let negative = 0;
+let zero = 0;
+
+for (let numsize = 1; numsize <= 10; numsize++) {
+let dig = prompt("Enter one of your 10 numbers, please");
+if (dig = "") {
+   alert("It's not a correct symbol)")
+   }
+else  if (dig = Number) {
+     if (dig % 2 == 0) {
+      ev = ++ev
+    }
+
+    if (dig % 2 !== 0) {
+      odd = ++odd
+    }
+
+    if (dig > 0) {
+        positive = ++positive
+    }
+
+    if (dig < 0) {
+        negative = ++negative
+    }
+
+    if (dig == 0) {
+        zero = ++zero
+    }
+   }
+    
+
+}
+
+alert(`You have entered ${ev} even numbers, ${odd} odd numbers, ${negative} negative numbers, ${positive} positive numbers, ${zero} numbers equal to zero `)
+
   
     let monday = ("today is monday");    
 var day = confirm(`${monday} do you wanna know which day is next?`);
