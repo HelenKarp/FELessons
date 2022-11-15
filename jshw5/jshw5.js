@@ -18,6 +18,15 @@ changeName : function changeName (){
      copy.driver = driveR
      console.log (this.driver);
   },
+  chekName : function chekName() {
+    chekname = prompt("enter driver's name")
+    if (chekname == Car.driver) {
+      alert("correct name)")
+    } else {
+      alert("not a correct name)")
+    }
+    
+  },
 valueOf(a) {
      console.log (this.averagegasEating);
      a = (this.averagegasEating) ;
@@ -31,14 +40,15 @@ rideTime = (dist / averagespeed )
 time = Math.floor(rideTime / 4)
 fullTime = (rideTime + time).toFixed(2)
 fullTime1 = (rideTime + time).toFixed()
-minutes = ((fullTime - fullTime1) * 60).toFixed()
-alert ("For this ride you need " + " " +gas +" " + "litres of gas," + " " +fullTime1 +" " + "hour/s and" +" " + minutes +" "+ "minutes")
+minutess = ((fullTime - fullTime1) * 60).toFixed()
+alert ("For this ride you need " + " " +gas +" " + "litres of gas," + " " +fullTime1 +" " + "hour/s and" +" " + minutess +" "+ "minutes")
 
 }              
 };
 console.log (Car.driver);
 Car.info()
 Car.changeName()
+Car.chekName()
 Car.valueOf()
 Car.resoursesForRide()
 /* завдання 2  */
