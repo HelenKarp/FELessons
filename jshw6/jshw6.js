@@ -9,7 +9,7 @@ let price = 10;
 let  price1  = 15;
 let price2 = 5;
 let price3 = 20; 
-var bargainList1 = [
+var bargainList = [
    {
 product: "bread",
 quantity : quantity,
@@ -42,23 +42,13 @@ sum : price1 * quantity,
 ]
 
 
-var newArr = bargainList1.map(el => el.sum);
+var newArr = bargainList.map(el => el.sum);
 console.log(newArr);
-var newArr1 = bargainList1;
+/* var newArr1 = bargainList;
 console.log(newArr1);
-console.log(newArr1);
+console.log(newArr1); */
 /* 1.1 */
-/* function groupBy(objectArray, property) {
-    return objectArray.reduce((acc, obj) => {
-      const key = obj[property];
-      const curGroup = acc[key] ?? [];
-  
-      return { ...acc, [key]: [...curGroup, obj] };
-    }, {});
-  }
-  const groupedGoodes = groupBy(bargainList, "hadbought");
-console.log(groupedGoodes); */
-/* або */
+
 bargainList.sort((a, b) => {
    const nameA = a.hadbought.toUpperCase(); 
    const nameB = b.hadbought.toUpperCase(); 
@@ -112,7 +102,7 @@ function Removed (removed = prompt("enter removed product")) {
     bargainList.splice(x, 1, );
     console.log(bargainList)
  }
- Removed()
+ //Removed()
 /* 2.2 */
 function newProduct() {
   
@@ -140,14 +130,24 @@ const summy = bargainList.reduce(
   );
   console.log(summy)
 /*   3.2 */
-function notboughtsum() {
-   const summy = groupedGoodes[no].reduce(
-      (accumulator, currentValue) => accumulator + currentValue. sum,
-      0,
-    );
-    console.log(summy)  
-}
-notboughtsum()
+function groupBy(objectArray, property) {
+    return objectArray.reduce((acc, obj) => {
+      const key = obj[property];
+      const curGroup = acc[key] ?? [];
+  
+      return { ...acc, [key]: [...curGroup, obj] };
+    }, {});
+  }
+  const groupedGoodes = groupBy(bargainList, "hadbought");
+ console.log(groupedGoodes);  
+ function notboughtsum() {
+    const summy = groupedGoodes[no].reduce(
+       (accumulator, currentValue) => accumulator + currentValue. sum,
+       0,
+     );
+     console.log(summy)  
+ }
+ notboughtsum()
 /* 3.3 */
 function sortedByPrice(prices = prompt("enter world low or hight depending on which prices you wanna see first")) {
     if (prices == "low") {
@@ -163,4 +163,3 @@ function sortedByPrice(prices = prompt("enter world low or hight depending on wh
 delPurchased()
 delPurchased() 
 console.log(bargainList)
-console.log(bargainList.tomatoes.sum)
