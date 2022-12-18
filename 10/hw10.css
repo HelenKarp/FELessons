@@ -15,7 +15,8 @@
 
 }
 .maincontainer {
-    
+    display: flexbox;
+    justify-content: center;
 max-width: 1440px;
 max-height: 1173px;
 
@@ -241,13 +242,12 @@ border: 1px solid #18B5DC;
 .who-w-a__container {
     
 max-width: 1170px;
-margin-left: 135px;
-margin-right: 135px;
+display: flexbox;
+justify-content: center;
 
 }
 .container {
-
-  margin: 0 auto;
+   
 }
 .who-w-a__title {
     position: relative;
