@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    margin: 0 auto;
+    padding: 50px 100px;
+}
+li {
+    padding: 3px;
+    
+  
+}
+a {
+  text-decoration: none;
+  font-family: 'Rubik Gemstones', cursive;
+    color: gray;
+    border: 1px solid  gray ;
+    border-radius: 3px;
+} 
+a:active {
+    text-decoration: underline;
+    transition: all 1s ease;
+    background-color: thistle;
+    color: steelblue;
+}
+a:hover {
+    color: teal;
+    background-color: bisque;
+    transition: all 1s ease;
+}
