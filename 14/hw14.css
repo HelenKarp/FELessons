@@ -9,7 +9,7 @@
 .header-container {
     position: absolute;
 max-width: 1170px;
-margin-left: 135px;
+margin: 0 auto;
 
 
 }
@@ -150,7 +150,7 @@ height: 115px;
     font-size: 24px;
     line-height: 21px;
     letter-spacing: 0.2px;
-   
+
     color: #16133D;
 }
 .text-container--text {
@@ -200,7 +200,7 @@ background: #16133D;
     max-width: 1170px;
     max-height: 113px;
     left: 135px;
-   
+
 }
 .footer-container--socials {
     display: flex;
@@ -226,7 +226,7 @@ height: 38px;
 }
 .socials-item:hover .socials-item--hover  {
     opacity: 0;
-  
+
 }
 .socials-item:hover .socials-item--hover1 {
     opacity: 1;
@@ -295,4 +295,3 @@ fill: var(--green) ;
 .item-container:hover .path3 {
     fill: var(--ltltgreen) ;
  }
-
