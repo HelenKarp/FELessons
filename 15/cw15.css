@@ -1,0 +1,67 @@
+body {
+font-size: 16px;
+
+}
+.link {
+    color: red;
+    opacity: 0.5;
+    transition-property: color, opacity;
+    transition-duration: 0.3s;
+    transition-delay: .3s;
+    transition-timing-function: ease;
+}
+.link:hover {
+    color: black;
+    opacity: 1;
+}
+.button {
+    padding: 7px 12px;
+    color: blueviolet;
+    background-color: blue;
+    border-radius: 5 px;
+    border: 3px solid transparent;
+    transition: all .3s linear;
+}
+.button-animation {
+    transition: all .3s linear; 
+}
+.button-animation:hover {
+    color: blueviolet;
+    background-color: blue;
+    background-color: aqua;
+    border-radius: 20px;
+    border: 3px solid green;
+}
+.button-scale {
+    background-color: aqua;
+    color: bisque;
+}
+main {
+    display: inline-block;
+    width: 133px;
+    overflow: hidden;
+}
+.button-scale:hover {
+   transform: scale(2, 2);
+    background-color: blue;
+    color: brown;
+}
+.button--transform {
+    height: 600px;
+    width: 800px;
+    transition: transform .3s ease;
+}
+.button--transform:hover {
+    transform:translate(20px, 10px)
+}
+.span:first-child {
+    width: 100px;
+    height: 100px;
+    background-color: antiquewhite;
+    opacity: 1;
+    position: absolute;
+    transform: translateX(-100%);
+}
+.span:hover  {
+transform: rotateX(180deg);
+}
