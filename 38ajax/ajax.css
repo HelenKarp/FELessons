@@ -1,0 +1,59 @@
+.film-item__hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid grey;
+    padding-bottom: 3px;
+}
+.film-item__deleniator {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid black;
+    display: block;
+}
+.button {
+    background-color:darkslategray;
+    color:lavender;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 7px;
+    position: relative;
+    transition: background-color 0.3s ease 0s;
+    overflow: hidden;
+}
+/* .button:hover {
+    background-color: thistle;
+} */
+.ripple {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    animation: btn-event 2s ease forwards;
+} 
+
+.item {
+    background-color: antiquewhite;
+    color: gray;
+}
+.active, .active:hover {
+    background-color: red;
+    color: green;
+   /*  animation: pag-event 3s ease forwards; */
+}
+.underfined {
+    background-color: yellow;
+    color: violet;
+}
+
+@keyframes btn-event {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(20);
+        opacity: 0;
+       
+    }
+
+}
