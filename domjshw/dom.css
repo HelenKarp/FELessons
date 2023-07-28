@@ -1,0 +1,19 @@
+.container {
+    width: 200px;
+    height: 540px;
+    background-color: gray;
+    border: 1px solid #0000;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+}
+.circle {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #0000;
+    border-radius: 150px;
+    background-color: antiquewhite;
+}

@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/FELessons/assets/css/reset.css">
+<link rel="stylesheet" href="/FELessons/assets/css/normalize.css">
+<link rel="stylesheet" href="/FELessons/project2/project2.css">
+
+</head>
+<body class="maincontainer">
+    
+ <header class="header">
+    
+    <div class="header__nav">
+        <div class="header__logo">
+         <img src="/FELessons/project2/pr2assets/Logo (1).png" alt="logo"> 
+        </div class= "menu">
+
+        
+        <ul class="menu__list">
+         <li class="menu__item"  > <div class="menu__dot"></div><a class="menu__link" href="#" id="">ABOUT US</a></li>
+         <li class="menu__item" ><div class="menu__dot"></div><a class="menu__link" href="#" id="">PROJECTS</a></li>
+         <li class="menu__item" ><div class="menu__dot"></div><a class="menu__link" href="#" id="">NEWS</a></li>
+         <li class="menu__item" ><div class="menu__dot"></div><a class="menu__link" href="#" id="">CONTACT</a></li>
+        </ul>
+        <div class="menu__socials">
+            <div class="menu__socials-item">
+                
+                <svg class="menu__circle">
+                    <use xlink:href="sprite.svg#circle" >
+            
+                    </use>
+                </svg>
+            
+                <svg class="menu__svg  menu__size-f" >
+                <use xlink:href="sprite.svg#facebook">
+        
+                </use>
+            </svg></div>
+            <div class="menu__socials-item">
+                <svg class="menu__circle">
+                    <use xlink:href="sprite.svg#circle">
+            
+                    </use>
+                </svg>
+            
+                <svg class="menu__svg  menu__size-t" >
+                <use xlink:href="sprite.svg#twitter">
+        
+                </use>
+            </svg></div>
+            <div class="menu__socials-item">
+                <svg class="menu__circle">
+                    <use xlink:href="sprite.svg#circle">
+            
+                    </use>
+                </svg>
+            
+                <svg class="menu__svg menu__size-i" >
+                <use xlink:href="sprite.svg#insta">
+        
+                </use>
+              </svg>
+            </div>
+        </div>
+    </div>
+    
+    <div class="header__circle-below">
+        <svg class="header__shewron-down" >
+            <use xlink:href="sprite.svg#shewron-down">
+    
+            </use>
+        </svg>
+    </div>
+ </header>
+
+ <div class="css-slider-wrapper">
+    <input type="radio" name="slider" class="slide-radio1" checked id="slider_1">
+    <input type="radio" name="slider" class="slide-radio2" id="slider_2">
+    <input type="radio" name="slider" class="slide-radio3" id="slider_3">
+    <input type="radio" name="slider" class="slide-radio4" id="slider_4">
+    <div class="slider-pagination">
+      <label for="slider_1" class="page1"></label>
+      <label for="slider_2" class="page2"></label>
+      <label for="slider_3" class="page3"></label>
+      <label for="slider_4" class="page4"></label>
+    </div>
+ 
+    
+  
+    
+    
+    <div class="slider slide1">
+     
+        <img class="bgphoto1 " src="/FELessons/project2/pr2assets/tu-tram-pham-202263 1.png" alt="">
+
+        <div class="header-slider">
+            <span class="header-slider__span1">SIMPLE & MODERN</span>
+            <span class="header-slider__span2">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</span>
+        </div>
+      </div>
+  
+    
+    <div class="slider slide2">
+        <img class="bgphoto1 " src="/FELessons/project2/pr2assets/tu-tram-pham-202263 1.png" alt="">
+        <div class="header-slider">
+            <span class="header-slider__span1">SIMPLE & MODERN</span>
+            <span class="header-slider__span2">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</span>
+        </div>
+    </div>
+    
+
+    <div class="slider slide3">
+        <img class="bgphoto1 " src="/FELessons/project2/pr2assets/tu-tram-pham-202263 1.png" alt="">
+
+        <div class="header-slider">
+            <span class="header-slider__span1">SIMPLE & MODERN</span>
+            <span class="header-slider__span2">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</span>
+        </div>
+    </div>
+ 
+
+    <div class="slider slide4">
+        <img class="bgphoto1 " src="/FELessons/project2/pr2assets/tu-tram-pham-202263 1.png" alt="">
+        <div class="header-slider">
+            <span class="header-slider__span1">SIMPLE & MODERN</span>
+            <span class="header-slider__span2">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</span>
+        </div>
+    </div>
+  </div>
+
+
+ <main class="main">
+    
+   <div class="titlebox">
+    <div class="titlebox__line">
+    </div>
+    <div class="titlebox__title">
+        WHAT WE DO
+    </div>
+   </div>
+   <div class="projects">
+        <div class="project1">
+            <div class="project1__images">
+                <div class="project1__image1">
+                <img src="/FELessons/project2/pr2assets/Rectangle 3.png" alt="blue">
+                </div>
+               <div class="project1__image2 left">
+                <img src="/FELessons/project2/pr2assets/joel-filipe-151697 1.png" alt="joel-filipe-151697">
+               </div>
+
+            </div>
+            <div class="textbox">
+               <span class="textbox__line1">ONE WORLD</span>
+               <span class="textbox__line2" >TRADE CENTER</span>
+               <p class="textbox__p">Increasing prosperity in our lives can be accomplished by having the right frame of mind.
+                 The truth is, our thoughts are very powerful.</p>
+                <button class="button">
+                    <a href="#" class="button__a">MORE DETAILS</a>
+                </button>
+                <div class="textitalic-box">
+                 <img class="textitalic-box__img" src="/FELessons/project2/pr2assets/.png" alt="location">
+                 <span class="textitalic-box__text">New York City, United States - 1776 feet </span>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="project1 reverse">
+            <div class="project1__images">
+                <div class="project1__image1 violet">
+                
+                </div>
+               <div class="project1__image2 right">
+                <img src="/FELessons/project2/pr2assets/photos-1284iH4Hjf4mhNgW 1.png" alt="joel-filipe-151697">
+               </div>
+
+            </div>
+            <div class="textbox margintop">
+               <span class="textbox__line1">INTERNATIONAL</span>
+               <span class="textbox__line2" >COMMERCE CENTRE</span>
+               <p class="textbox__p">Successful businesses have many things in common, today we’ll look at the big 
+                ‘R’ of recognition and how a digital advertising network may help.</p>
+                <button class="button">
+                    <a href="#" class="button__a">MORE DETAILS</a>
+                </button>
+                <div class="textitalic-box">
+                 <img class="textitalic-box__img" src="/FELessons/project2/pr2assets/.png" alt="location">
+                 <span class="textitalic-box__text">Hong Kong - 1588 feet </span>
+                </div>
+            </div>
+        </div>
+   </div>
+
+
+
+   <section class="section2">
+    <img src="/FELessons/project2/pr2assets/city 2 @2x 1.png" alt="bgcity" class="section2bgimg">
+<div class="section2-container">
+    <div class="section2__title">
+        <div class="section2__title-line"></div>
+        <div class="section2__title-title">LATEST NEWS</div>
+
+    </div>
+    <div class="main-containers22">
+        <div class="swiper2 mySwiper containerdad">
+          <div class="swiper-wrapper content">
+            <div class="swiper-slide cardb">
+              
+     <div class="card ">
+        <img src="/FELessons/project2/pr2assets/latestnews/matthew-hamilton-202227 1 (1).png" alt="lauren-mancke">
+        <div class="card__title">
+            EFFECTIVE ADVERTISING POINTERS.
+        </div>
+        <span class="card__text">Having a home based business is a 
+            wonderful asset to your life...</span>
+           <div class="card__author">
+               <img class="card__author-img" src="/FELessons/project2/pr2assets/latestnews/photos-13323vsWmKApDZJIh 1 (1).png" alt="">
+               <div class="card__author-name">
+                   <span class="span1">DOMINIC FREEMAN</span>
+                   <span class="span2">13 Dec 2019</span>
+   
+               </div>
+           </div>
+        </div>
+
+
+            </div>
+            <div class="swiper-slide cardb">
+              <div class="card">
+     <img src="/FELessons/project2/pr2assets/latestnews/lauren-mancke-60633 1.png" alt="lauren-mancke">
+     <div class="card__title">
+        SEE THE UNMATCHED BEAUTY OF THE GREAT.
+     </div>
+     <span class="card__text">Free directories: directories are perfect for 
+        customers that are searching for...</span>
+        <div class="card__author">
+            <img class="card__author-img" src="/FELessons/project2/pr2assets/latestnews/photos-13323TAfapiSrc9IO23 1 (1).png" alt="">
+            <div class="card__author-name">
+                <span class="span1">ALJA BRUN</span>
+                <span class="span2">20 Jan 2020</span>
+
+            </div>
+        </div>
+     </div>
+
+
+            </div>
+            <div class="swiper-slide cardb">
+              <div class="card">
+            <img src="/FELessons/project2/pr2assets/latestnews/Image (13).png" alt="lauren-mancke">
+            <div class="card__title">
+                HYPNOTIZE YOURSELF INTO THE GHOST.
+            </div>
+            <span class="card__text">There are many things that are 
+                important to catalog design...</span>
+               <div class="card__author">
+                   <img class="card__author-img" src="/FELessons/project2/pr2assets/latestnews/photos-13323TAfapiSrc9IO 1 (1).png" alt="">
+                   <div class="card__author-name">
+                       <span class="span1">ALICE WARD</span>
+                       <span class="span2">30 Nov 2019</span>
+       
+                   </div>
+               </div>
+            </div>
+
+            </div>
+            <div class="swiper-slide cardb">
+              <div class="card">
+            <img src="/FELessons/project2/pr2assets/latestnews/Image (13).png" alt="lauren-mancke">
+            <div class="card__title">
+                HYPNOTIZE YOURSELF INTO THE GHOST.
+            </div>
+            <span class="card__text">There are many things that are 
+                important to catalog design...</span>
+               <div class="card__author">
+                   <img class="card__author-img" src="/FELessons/project2/pr2assets/latestnews/photos-13323TAfapiSrc9IO 1 (1).png" alt="">
+                   <div class="card__author-name">
+                       <span class="span1">ALICE WARD</span>
+                       <span class="span2">30 Nov 2019</span>
+       
+                   </div>
+               </div>
+            </div>
+
+
+            </div>
+            <div class="swiper-slide cardb">
+                  <div class="card">
+        <img src="/FELessons/project2/pr2assets/latestnews/matthew-hamilton-202227 1 (1).png" alt="lauren-mancke">
+        <div class="card__title">
+            EFFECTIVE ADVERTISING POINTERS.
+        </div>
+        <span class="card__text">Having a home based business is a 
+            wonderful asset to your life...</span>
+           <div class="card__author">
+               <img class="card__author-img" src="/FELessons/project2/pr2assets/latestnews/photos-13323vsWmKApDZJIh 1 (1).png" alt="">
+               <div class="card__author-name">
+                   <span class="span1">DOMINIC FREEMAN</span>
+                   <span class="span2">13 Dec 2019</span>
+   
+               </div>
+           </div>
+        </div>
+
+
+            </div>
+            <div class="swiper-slide cardb">
+               <div class="card">
+     <img src="/FELessons/project2/pr2assets/latestnews/lauren-mancke-60633 1.png" alt="lauren-mancke">
+     <div class="card__title">
+        SEE THE UNMATCHED BEAUTY OF THE GREAT.
+     </div>
+     <span class="card__text">Free directories: directories are perfect for 
+        customers that are searching for...</span>
+        <div class="card__author">
+            <img class="card__author-img" src="/FELessons/project2/pr2assets/latestnews/photos-13323TAfapiSrc9IO23 1 (1).png" alt="">
+            <div class="card__author-name">
+                <span class="span1">ALJA BRUN</span>
+                <span class="span2">20 Jan 2020</span>
+
+            </div>
+        </div>
+     </div>
+
+            </div>
+            <div class="swiper-slide cardb">
+                <div class="card">
+                    <img src="/FELessons/project2/pr2assets/latestnews/lauren-mancke-60633 1.png" alt="lauren-mancke">
+                    <div class="card__title">
+                       SEE THE UNMATCHED BEAUTY OF THE GREAT.
+                    </div>
+                    <span class="card__text">Free directories: directories are perfect for 
+                       customers that are searching for...</span>
+                       <div class="card__author">
+                           <img class="card__author-img" src="/FELessons/project2/pr2assets/latestnews/photos-13323TAfapiSrc9IO23 1 (1).png" alt="">
+                           <div class="card__author-name">
+                               <span class="span1">ALJA BRUN</span>
+                               <span class="span2">20 Jan 2020</span>
+               
+                           </div>
+                       </div>
+                    </div>
+               
+            </div>
+            <div class="swiper-slide cardb">
+                <div class="card">
+                    <img src="/FELessons/project2/pr2assets/latestnews/matthew-hamilton-202227 1 (1).png" alt="lauren-mancke">
+                    <div class="card__title">
+                        EFFECTIVE ADVERTISING POINTERS.
+                    </div>
+                    <span class="card__text">Having a home based business is a 
+                        wonderful asset to your life...</span>
+                       <div class="card__author">
+                           <img class="card__author-img" src="/FELessons/project2/pr2assets/latestnews/photos-13323vsWmKApDZJIh 1 (1).png" alt="">
+                           <div class="card__author-name">
+                               <span class="span1">DOMINIC FREEMAN</span>
+                               <span class="span2">13 Dec 2019</span>
+                            </div>
+                        </div>
+                     </div>
+             
+             </div>
+             <div class="swiper-slide cardb">
+                 <div class="card">
+                     <img src="/FELessons/project2/pr2assets/latestnews/matthew-hamilton-202227 1 (1).png" alt="lauren-mancke">
+                     <div class="card__title">
+                         EFFECTIVE ADVERTISING POINTERS.
+                     </div>
+                     <span class="card__text">Having a home based business is a 
+                         wonderful asset to your life...</span>
+                        <div class="card__author">
+                            <img class="card__author-img" src="/FELessons/project2/pr2assets/latestnews/photos-13323vsWmKApDZJIh 1 (1).png" alt="">
+                            <div class="card__author-name">
+                                <span class="span1">DOMINIC FREEMAN</span>
+                                <span class="span2">13 Dec 2019</span>
+                
+                            </div>
+                        </div>
+                     </div>
+             
+             </div>
+     
+           </div>
+         </div>
+         <div class="swiper-button-next"></div>
+           <div class="swiper-button-prev"></div>
+           <div class="swiper-pagination"></div>
+         
+         </div>
+    <!-- <div class="cards-container ">
+     <div class="card">
+     <img src="/FELessons/project2/pr2assets/latestnews/lauren-mancke-60633 1.png" alt="lauren-mancke">
+     <div class="card__title">
+        SEE THE UNMATCHED BEAUTY OF THE GREAT.
+     </div>
+     <span class="card__text">Free directories: directories are perfect for 
+        customers that are searching for...</span>
+        <div class="card__author">
+            <img class="card__author-img" src="/FELessons/project2/pr2assets/latestnews/photos-13323TAfapiSrc9IO23 1 (1).png" alt="">
+            <div class="card__author-name">
+                <span class="span1">ALJA BRUN</span>
+                <span class="span2">20 Jan 2020</span>
+
+            </div>
+        </div>
+     </div>
+
+
+
+     <div class="card">
+        <img src="/FELessons/project2/pr2assets/latestnews/matthew-hamilton-202227 1 (1).png" alt="lauren-mancke">
+        <div class="card__title">
+            EFFECTIVE ADVERTISING POINTERS.
+        </div>
+        <span class="card__text">Having a home based business is a 
+            wonderful asset to your life...</span>
+           <div class="card__author">
+               <img class="card__author-img" src="/FELessons/project2/pr2assets/latestnews/photos-13323vsWmKApDZJIh 1 (1).png" alt="">
+               <div class="card__author-name">
+                   <span class="span1">DOMINIC FREEMAN</span>
+                   <span class="span2">13 Dec 2019</span>
+   
+               </div>
+            
+           </div>
+        </div>
+
+      
+
+        <div class="card">
+            <img src="/FELessons/project2/pr2assets/latestnews/Image (13).png" alt="lauren-mancke">
+            <div class="card__title">
+                HYPNOTIZE YOURSELF INTO THE GHOST.
+            </div>
+            <span class="card__text">There are many things that are 
+                important to catalog design...</span>
+               <div class="card__author">
+                   <img class="card__author-img" src="/FELessons/project2/pr2assets/latestnews/photos-13323TAfapiSrc9IO 1 (1).png" alt="">
+                   <div class="card__author-name">
+                       <span class="span1">ALICE WARD</span>
+                       <span class="span2">30 Nov 2019</span>
+       
+                   </div>
+               </div>
+            </div>
+    </div> -->
+</div>
+</section>
+
+
+
+
+
+
+
+  
+
+
+
+   <section class="section3">
+    <div class="titlebox titles3box">
+        <div class="titlebox__line">
+        </div>
+        <div class="titlebox__title">
+            GALLERY
+        </div>
+    </div>
+    <div class="gallery">
+        <div class="imagesbox">
+            <div class="positionrelative">
+                <img src="/FELessons/project2/pr2assets/scott-webb-176434 1 (1).png" alt="scott-webb-176434">
+                <img class="zoom" src="/FELessons/project2/pr2assets/bi_zoom-in (1).png" alt="bi_zoom-in">
+            </div >
+            <div class="imagesbox__images">
+                <div  class="imagesbox__grid1"><img src="/FELessons/project2/pr2assets/photos-13323p6Bdc0uhr8Bq 1.png" alt="project"></div>
+                <div class="imagesbox__grid2"><img src="/FELessons/project2/pr2assets/Image 3 (2).png" alt="project"></div>
+                <div class="imagesbox__grid3"><img src="/FELessons/project2/pr2assets/Image 4 (2).png" alt="project"></div>
+                <div class="imagesbox__grid4"><img src="/FELessons/project2/pr2assets/Image 5 (2).png" alt="project"></div>
+            </div>   
+        </div>
+        <button class="button">
+            <a href="#" class="button__a">SEE MORE</a>
+        </button>
+
+
+    </div>
+
+   </section>
+ <section class="map">
+    <div id="googlemaps"></div>
+ <div id="contactform" class="contactform">
+     
+     <div class="registration-cssave">
+         <form>
+            <img src="/FELessons/project2/pr2assets/city@2x 1.png" alt="city" class="form-img">
+            <div class="form-title">
+                <div class="form-title__line"></div>
+             <h3 class="form-title__title">GET IN TOUCH</h3>
+            </div>
+             <div class="form">
+                <div class="form__left">
+                    <span  class="form__left-text"><i class="fa-solid fa-location-dot marg-right"></i>91 Nolan Extensions Suite 670</span>
+                    <span  class="form__left-text"><i class="fa-solid fa-phone marg-right"></i>+001 356-868-2454</span>
+                    <span  class="form__left-text"><i class="fa-sharp fa-solid fa-inbox marg-right"></i>montichello@service.com</span>
+                    <span class="form__left-text"><i class="fa-regular fa-clock-nine marg-right"></i>From 07:05AM to 19:30PM</span>
+                </div>
+                <div class="form__right">
+                    <input type="text" placeholder="Mollie Medina" class="input">
+                    <input type="text" placeholder="Email" class="input2">
+                    <button type="submit" class="button-submit">SUBMIT</button>
+                </div>
+             </div>
+             
+         </form>
+         
+     </div>
+     
+ </div>
+ 
+ </section>
+
+  
+  
+
+ </main> 
+ 
+  <footer class="footer">
+    <img class="bgimage" src="/FELessons/project2/pr2assets/scott-webb-176434 2.png" alt="bgimage">
+      <div class="footerbox">
+        <div class="footerbox__logo-copyright">
+            <div class="footerbox__logo">
+             <img src="/FELessons/project2/pr2assets/Logo (1).png" alt="logo">
+            </div>
+            <div class="footerbox__copyright">
+                Copyrights © 2020 Montichello
+            </div>
+            
+
+        </div>
+        <div class="menu__socials margin-left">
+            <div class="menu__socials-item">
+                
+                <svg class="menu__circle fill">
+                    <use xlink:href="sprite.svg#circle" >
+            
+                    </use>
+                </svg>
+            
+                <svg class="menu__svg  menu__size-f" >
+                <use xlink:href="sprite.svg#facebook">
+        
+                </use>
+            </svg></div>
+            <div class="menu__socials-item">
+                <svg class="menu__circle fill">
+                    <use xlink:href="sprite.svg#circle">
+            
+                    </use>
+                </svg>
+            
+                <svg class="menu__svg  menu__size-t" >
+                <use xlink:href="sprite.svg#twitter">
+        
+                </use>
+            </svg></div>
+            <div class="menu__socials-item">
+                <svg class="menu__circle fill">
+                    <use xlink:href="sprite.svg#circle">
+            
+                    </use>
+                </svg>
+            
+                <svg class="menu__svg menu__size-i" >
+                <use xlink:href="sprite.svg#insta">
+        
+                </use>
+              </svg>
+            </div>
+        </div>
+
+      </div>
+   </footer> 
+   <script src="/FELessons/project2/project2.js"></script>
+
+   
+</body>
+</html>

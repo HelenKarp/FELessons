@@ -1,0 +1,91 @@
+.banner, .aboutme {
+  background-color: grey;
+  padding: 100px 0;
+  margin: 100px 0;
+}
+.banner, .aboutme, .banner__title {
+  text-align: center;
+}
+.banner__title {
+  margin-bottom: 40px;
+  color: red;
+}
+.banner__text {
+  color: red;
+}
+.banner__text--bold {
+  font-weight: bold;
+}
+.banner__text--underline {
+  text-decoration: underline;
+}
+.banner__text .b {
+  color: blue;
+  background-color: antiquewhite;
+}
+
+.aboutme__text {
+  color: blue;
+  background-color: aliceblue;
+}
+
+.form {
+  max-width: 50%;
+}
+
+.input-field__label {
+  display: block;
+  position: relative;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+.input-field__input {
+  width: 100%;
+  border: 1px solid rgba(51, 51, 51, 0.2);
+  outline: 10px solid blue;
+  outline: none;
+  padding: 15px 10px;
+  border-radius: 3px;
+  color: blueviolet;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+.input-field::-moz-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(51, 51, 51, 0.2);
+}
+.input-field:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(51, 51, 51, 0.2);
+}
+.input-field::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(51, 51, 51, 0.2);
+}
+.input-field__wrapper {
+  display: flex;
+  align-items: center;
+}
+.input-field__wrapper::after {
+  content: "1";
+  display: inline-block;
+  position: absolute;
+  left: 450px;
+}
+.input-field__icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: 170px;
+}
+.input-field__text {
+  resize: none;
+  width: 102%;
+}/*# sourceMappingURL=style.css.map */

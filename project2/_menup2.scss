@@ -1,0 +1,99 @@
+.menu {
+    z-index: 1;
+    &__list {
+        list-style: none;
+        white-space: nowrap;
+        z-index: 1;
+    }
+    &__dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 5px;
+        border:  1px solid $white;
+        margin-right: 14px;
+        &:hover {
+            background-color: $white;
+            @include transition09ease;
+        }
+    }
+
+    &__item {
+        display: inline-flex;
+    align-items: baseline;
+       @include menuitem;
+        & + & {
+            //margin-top: 18px;
+            @media screen and (min-width: $tablet) {
+                margin: 0 0 0 70px;
+            }
+        }
+        
+        &:hover {
+            @include scale12;
+            @include transition09ease;
+        }
+        &:hover  .menu__dot {
+            background-color: $white;
+            @include transition09ease;
+        }
+        &:active {
+            @include rotate360z;
+            @include transition09ease;     
+        }
+    }    
+
+    &__link {
+        @include menulink;
+        position: relative;
+        display: flex;
+        align-items: center;
+        &:hover {
+            color: $jj;
+            @include translinear03;
+        }
+        &:active {
+         text-decoration: underline;
+         @include transition09ease;
+        
+        }
+        @media screen and (min-width: $tabletBig) {
+            padding-bottom: 5px;   
+        }
+    }
+    &__socials {
+        display: flex;
+        gap: 20px;
+        position: relative;
+        margin-left: 110px;
+        z-index: 1;
+       
+    }
+    &__socials-item {
+        @include socials;
+       position: relative;
+        &:hover {
+            @include socials_hover;
+        }
+    }
+   
+    &__size-f {
+    @include size-f;
+    }
+    &__size-t {
+        @include size-t;
+    }
+    &__size-i {
+        @include size-i;
+    }
+    &__svg {
+       @include svg-logo;
+    }
+    &__circle {
+       @include circle-socials;
+
+        }
+}
+
+
+
+

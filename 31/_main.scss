@@ -1,0 +1,163 @@
+.wrapper {
+    background-color: $dark-blue;
+    margin: 0 auto;
+    width: 100%;
+    height:1024px;
+position: relative;
+overflow: hidden;
+}
+.background-wrapper {
+    background-color: $backgr;
+    z-index: 1;
+    height: 860px;
+    width: 69.4%;
+    position: absolute;
+    bottom: 82px;
+  left: 220px;
+   
+}
+.photo-wrapper {
+
+margin: 82px auto 82px auto;
+width: 69.4%;
+height: 860px;
+padding-left: 220px;
+padding-right: 220px;
+padding: auto;
+
+
+}
+.main{
+    width: 60%;
+    height: 532px;
+    padding: 154px 200px 154px 200px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.dashboard {
+    background-color: $dark-blue;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.slider-container {
+  background-color: $deep-blue;  
+  margin: 0 auto; 
+  height: 77.44%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 41px ;
+  
+  align-items: center;
+  &__leftside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin: 78.5px 0 78.5px 40px;
+    &-starsbox {
+      display: flex;
+      margin: 0 auto;
+      gap: 10px;
+    }
+    &-star {
+        fill:$yellow;
+        width: 20px;
+        height: 21px;
+        &:hover {
+            fill: $white;
+            transition: all 0.9s linear;
+        }
+    }
+  }
+  &__rightside {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    &-above {
+        margin: 60px 40px 0 0;
+    }
+  }
+}
+.description {
+    &__title {
+        font-size: 32px;
+        line-height: 32px;
+        @include title-pagination;
+        color: $white;
+    }
+    &__subtitle {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: $white; 
+    }
+    &__text {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        color: $white; 
+        font-size: 14px;
+        line-height: 22px; 
+    }
+}
+
+.slider-pagination {
+display: flex;
+gap: 74.5px;
+/* margin: 28px 50px; */
+
+&__item {
+display: flex;
+gap: 15px;
+flex-direction: column;
+align-items: center;
+}
+&__item-svg {
+    stroke: $inactive;
+    fill: $dark-blue;
+    width: 26px;
+    height: 24px;
+    &:hover {
+       stroke: $white;
+       transition: all 0.9s linear;
+    }
+    
+    
+}
+&__item-title {
+    @include title-pagination;
+    &:hover {
+        color: $white;
+    }
+}
+&:hover  &__item-title,  fill {
+    stroke: $white;
+    fill: $white;
+    color: $white;
+    transition: all 0.9s linear;
+ }
+ &:hover &__item-svg {
+    stroke: $white;
+    fill: $inactive;
+    transition: all 0.9s linear;
+ }
+}
+
+
+.fill {
+    fill: $inactive;
+    &:hover {
+        fill: $white; 
+        transition: all 0.9s linear;
+    }
+}

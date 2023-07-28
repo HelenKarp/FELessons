@@ -102,7 +102,29 @@ function createPagination(amount) {
 
 }
 
-function addListenerToPaginationItems() {
+
+function addListenerToPaginationItem(pageNumber) {
+	let ulItem = document.querySelectorAll('#searchPagination li'),
+		form = document.getElementById('search-form');
+	if (ulItem.length === 0) {
+		return;
+	}
+	ulItem[pageNumber - 1].classList.add('active');
+
+	ulItem.forEach((item) => {
+		item.addEventListener('click', (event) => {
+			if (item.classList.contains('active')) {
+				return;
+			}
+			console.log(item);
+			console.log(item.innerHTML);
+			console.log(item.innerText);
+			findFilms(event.target.innerText, form);
+		});
+	});
+}
+
+function addListenerToPaginationItems1() {
     let ulItems = document.querySelectorAll('#search-pagination li'),
         form = document.getElementById('search-form'),
         current = document.getElementsByClassName("active"),
@@ -195,7 +217,7 @@ function addListenerToDetailsBtn(block) {
   
 }
 
-function showFilmDetails(e) {
+/* function showFilmDetails(e) {
    let mainDiv = e.target.closest('.film-item'),
        elDetails = document.createElement('div'),
        deleniator = document.createElement('span');
@@ -227,11 +249,113 @@ function showFilmDetails(e) {
         let  elDetails = document.createElement('div');
         if (!elDetails) {
             return;
-        }
+        }else
         elDetails.innerHTML = 'Sorrye, something went wrong'
     })
     return mainDiv
+} */
+
+
+function showFilmDetails(event) {
+	let selectedMovie = event.target.closest('.film-item');
+	console.log(selectedMovie.getAttribute('data-id'));
+
+	axios({
+		url: 'http://www.omdbapi.com/?i=tt3896198&apikey=2d2c3503',
+		method: 'GET',
+		params: {
+			i: selectedMovie.getAttribute('data-id'),
+		},
+		responseType: 'json',
+	})
+		.then((res) => {
+			console.log(res.data);
+			let resBlock = document.getElementsByClassName('film-item__details-text');
+			if (!resBlock) {
+				return;
+			}
+			resBlock.innerHTML = '';
+			if (res.data.Error) {
+				resBlock.innerHTML = res.data.Error;
+			} else if (res.data) {
+				resBlock.append(createFilmData(res.data));
+			}
+		})
+		.catch(() => {
+			let resBlock = document.getElementsByClassName('film-item__details-text');
+			if (!resBlock) {
+				return;
+			}
+			resBlock.innerHTML = 'Error!';
+		});
 }
+
+/* function createFilmData(item) {
+	let el = document.createElement('div'),
+		elTitle = document.createElement('h4'),
+		elCountry = document.createElement('div'),
+		elLanguage = document.createElement('div'),
+		elGenre = document.createElement('div'),
+		elPeople = document.createElement('div'),
+		elDirector = document.createElement('div'),
+		elWriter = document.createElement('div'),
+		elActors = document.createElement('div'),
+		elPlotWrapper = document.createElement('div'),
+		elPlotTitle = document.createElement('h5'),
+		elPlot = document.createElement('p');
+
+	el.classList.add('full-info__wrapper');
+	elTitle.classList.add('full-info__title');
+	elCountry.classList.add('full-info__country');
+	elLanguage.classList.add('full-info__language');
+	elGenre.classList.add('full-info__genre');
+	elPeople.classList.add('full-info__people-wrapper');
+	elDirector.classList.add('full-info__people');
+	elWriter.classList.add('full-info__people');
+	elActors.classList.add('full-info__people');
+	elPlotWrapper.classList.add('full-info__descr-wrapper');
+	elPlotTitle.classList.add('full-info__descr-title');
+	elPlot.classList.add('full-info__descr');
+
+	elTitle.innerHTML = item.Title;
+	elCountry.innerHTML = item.Country + ', ' + item.Year + ' year';
+	elLanguage.innerHTML =
+		'<span class="test-title">Language: </span>' + item.Language;
+	elGenre.innerHTML =
+		'<span class="test-title">Genre: </span>' +
+		item.Genre +
+		' (runtime ' +
+		item.Runtime +
+		')';
+	elDirector.innerHTML =
+		`<span class="test-title">Director: </span>` + item.Director;
+	elWriter.innerHTML =
+		`<span class="test-title">Writer: </span>` + item.Writer;
+	elActors.innerHTML =
+		'<span class="test-title">Actors: </span>' + item.Actors;
+	elPlotTitle.innerHTML = 'Plot';
+	elPlot.innerHTML = item.Plot;
+
+	elPeople.append(elDirector);
+	elPeople.append(elWriter);
+	elPeople.append(elActors);
+
+	elPlotWrapper.append(elPlotTitle);
+	elPlotWrapper.append(elPlot);
+
+	el.append(elTitle);
+	el.append(elCountry);
+	el.append(elPeople);
+	el.append(elLanguage);
+	el.append(elGenre);
+	el.append(elPlotWrapper);
+
+	return el;
+} */
+
+
+
+/* function for button below */
 
 document.addEventListener('click', function(e) {
   const targetItem = e.target;

@@ -1,0 +1,223 @@
+
+@mixin menuitem {
+    font-family: $ssp;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: $white;
+    text-transform: uppercase;
+}
+@mixin menulink {
+    color: $white;
+    font-family: $ssp;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+@mixin socials {
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+   /*  opacity: 0.4;
+    border: 1px solid #FFFFFF; */
+}
+@mixin socials_hover {
+    border: 1px solid  $hgrey;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-transition: all 0.9s ease;
+    -o-transition: all 0.9s ease;
+    transition: all 0.9s ease;
+}
+@mixin size-f {
+    width: 10px;
+        height: 18px;
+        margin: 10px 0 ;
+        left: 15px; 
+}
+@mixin size-t {
+    margin: 11px 0 ;
+    left: 12px;
+    width: 16px;
+    height: 18px;  
+}
+@mixin size-i {
+    margin: 11px 0 ;
+    right: 13px;
+    width: 14px;
+     height: 18px; 
+}
+@mixin circle-socials {
+    stroke: $white;
+    width: 40px;
+    height: 40px;
+    fill: $violet;
+    &:hover {
+        fill: $hgrey; 
+        -webkit-transition: all 0.9s ease; 
+        -o-transition: all 0.9s ease; 
+        transition: all 0.9s ease;
+    }
+    &:active {
+        -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+                transform: scale(1.2);
+        -webkit-transition: all 0.9s linear;
+        -o-transition: all 0.9s linear;
+        transition: all 0.9s linear;
+    }
+    &:hover + .menu__svg {
+        fill: $hgrey; 
+     
+}
+}
+@mixin svg-logo {
+    fill: $white;
+        position: absolute;
+        &:hover {
+            fill: $hgrey; 
+            -webkit-transition: all 0.9s ease; 
+            -o-transition: all 0.9s ease; 
+            transition: all 0.9s ease;
+        }
+        &:active {
+            -webkit-transform: rotateZ(360deg);
+                -ms-transform: rotate(360deg);
+                    transform: rotateZ(360deg);
+            -webkit-transition: all 0.9s linear;
+            -o-transition: all 0.9s linear;
+            transition: all 0.9s linear;
+        } 
+}
+@mixin transition09ease {
+    -webkit-transition: all 0.9s ease;
+    -o-transition: all 0.9s ease;
+    transition: all 0.9s ease;
+}
+@mixin translinear03 {
+    -webkit-transition: all 0.3s linear;-o-transition: all 0.3s linear;transition: all 0.3s linear;
+}
+@mixin rotate360z {
+    -webkit-transform: rotateZ(360deg); -ms-transform: rotate(360deg); transform: rotateZ(360deg);  
+}
+@mixin scale12 {
+    -webkit-transform: scale(1.2); -ms-transform: scale(1.2); transform: scale(1.2); 
+}
+@mixin circle-below {
+    opacity: 0.7;
+        border: 1px solid $white; 
+        width: 40px;
+        height: 40px;
+        border-radius: 23px;
+        position: absolute;
+        margin: 0 auto;
+        left: 50% /* calc(50% - 40px) */;
+        bottom: 50px;
+        &:hover {
+            border: 1px solid $hgrey; 
+            fill: $hgrey; 
+            -webkit-transition: all 0.9s ease; 
+            -o-transition: all 0.9s ease; 
+            transition: all 0.9s ease;
+        }
+        &:hover .header__shewron-down {
+            fill: $hgrey; 
+            -webkit-transition: all 0.9s ease; 
+            -o-transition: all 0.9s ease; 
+            transition: all 0.9s ease;
+        }
+        &:active {
+            border: 1px solid $hgrey; 
+            -webkit-transform: rotateZ(360deg);
+                -ms-transform: rotate(360deg);
+                    transform: rotateZ(360deg);
+            -webkit-transition: all 0.9s linear;
+            -o-transition: all 0.9s linear;
+            transition: all 0.9s linear;
+        } 
+        &:active .header__shewron-down {
+            -webkit-transform: rotateZ(360deg);
+                -ms-transform: rotate(360deg);
+                    transform: rotateZ(360deg);
+            -webkit-transition: all 0.9s linear;
+            -o-transition: all 0.9s linear;
+            transition: all 0.9s linear;
+        } 
+}
+@mixin line1 {
+    font-family: $m700-400;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 27px;
+        color: $hgrey;
+}
+@mixin line2 {
+    font-family: $m700-400;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 54px;
+        color: $hgrey;
+}
+@mixin p {
+    font-family: $opsn;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        color: $hgrey;
+}
+@mixin button {
+    width: 190px;
+    height: 50px;
+   border: 1px solid #2C4058;
+   background-color: $white; 
+   &:hover {
+    border: 1px solid #2C4058;
+    background-color: #2C4058;
+    -webkit-transition: all 0.9s linear;
+            -o-transition: all 0.9s linear;
+            transition: all 0.9s linear;
+    -webkit-transform: scale(1.2); -ms-transform: scale(1.2); transform: scale(1.2); 
+   }
+   &:hover .button__a {
+    -webkit-transition: all 0.9s linear;
+    -o-transition: all 0.9s linear;
+    transition: all 0.9s linear;
+    color: $white;
+   }
+   &:active {
+    border: 1px solid #2C4058;
+    background-color: #2C4058;
+    -webkit-transition: all 0.9s linear;
+            -o-transition: all 0.9s linear;
+            transition: all 0.9s linear;
+    -webkit-transform: scale(1.2); -ms-transform: scale(1.2); transform: scale(1.2); 
+   }
+}
+@mixin buttontext {
+    margin: 16px 41px 17px ;
+        font-family: $m700-400;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: $black;
+        text-decoration: none;
+        white-space: nowrap;
+}
+@mixin italictext {
+    font-family: $opsn;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: $black;
+}
+

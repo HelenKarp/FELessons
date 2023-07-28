@@ -275,7 +275,6 @@
 }
 .blog__info {
   width: 50%;
-  max-height: 300px;
   display: flexbox;
   align-items: center;
 }
@@ -419,6 +418,11 @@
     flex-direction: column;
     align-items: flex-start;
     padding-top: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .posts__div {
+    margin-bottom: 50px;
   }
 }
 .posts__svg {
@@ -611,6 +615,7 @@
 .post {
   display: flex;
   overflow: hidden;
+  width: 100%;
 }
 .post__photo {
   max-width: 100%;
@@ -857,6 +862,9 @@
     font-size: 16px;
     line-height: 1.5;
   }
+}
+.info__box2-p {
+  margin-top: 0;
 }
 .info__svg {
   fill: #7B7B7B;

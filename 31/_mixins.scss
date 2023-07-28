@@ -1,0 +1,11 @@
+@mixin title-pagination {
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+text-transform: uppercase;
+color: $inactive;
+white-space: nowrap;
+
+}
