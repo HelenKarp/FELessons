@@ -1,0 +1,14 @@
+@import url(/FELessons/react1/css/reset.css);
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background-color: #262c37;
+    padding: 50px;
+}
+h1 {
+    font-size: 50px;
+    text-align: center;
+    color: rgb(20, 158, 202);
+    
+}
