@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send HTML form to Email</title>
+    <link rel="stylesheet" href="/FELessons/form2/form2.css">
+</head>
+<body>
+    <div class="wrapper">
+        <form method="post" action="sendmail/sendmail.php" enctype="multipart/form-data" class="form">
+            <input type="text" required placeholder="Name" name="name" class="form__input"></input>
+        <input type="email" required placeholder="E-mail" name="email" class="form__input"></input>
+        <div class="form__options options-form">
+            <h4 class="options-form__title">Do you like this form?</h4>
+            <label  class="options-form__item">
+                <input type="radio" checked name="like" value="Yes!" class="options-form__input">
+                <span class="options-form__text">Yes</span>
+            </label>
+            <label  class="options-form__item">
+                <input type="radio" checked name="like" value="Yes!" class="options-form__input">
+                <span class="options-form__text">Yes of course!</span>
+            </label>
+        </div>
+        <textarea name="message" placeholder="message" class="form__input"></textarea>
+        <div class="form__file file-form">
+            <label class="file-form__item">
+                <input type="file" name="image" accept=".jpg, .png" class="file-form__input">
+                <div class="file-form__button button">Choose file</div>
+            </label>
+            <div class="file-form__name"></div>
+        </div>
+        <label class="form__checkbox checkbox-form">
+            <input type="checkbox" required name="thebest" class="checkbox-form__input">
+            <span class="checkbox-form__text">You rock!</span>
+        </label>
+        <button class="form__button button">Send</button>
+        </form>
+        
+    </div>
+    <script src="/FELessons/form2/form2.js"></script>  
+</body>
+</html>
