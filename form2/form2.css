@@ -47,10 +47,6 @@ textarea.form__input{
     min-width: 0;
 }
 
-.form__checkbox.checkbox-form {
-}
-.form__button.button {
-}
 .options-form__title {
     color: antiquewhite;
 }
@@ -162,9 +158,11 @@ textarea.form__input{
 .options-form__input:focus-visible + .checkbox-form__text::before {
    outline: 0.0625rem solid #fff;
 }
-.options-form__text {
-}
-.file-form__input {
+
+.form-sending {
+    opacity: 0.5;
+    pointer-events: none;
+
 }
 .file-form__button {
     padding: 0.5rem 0.9375rem;
