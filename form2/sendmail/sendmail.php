@@ -15,16 +15,16 @@ $mail->isHTML('true');
 $mail->isSMTP();
 $mail->Host = 'smtp.gmail.com';
 $mail->SMTPAuth = true;
-$mail->Username = 'alona.karpenko44@gmail.com';
-$mail->Password = 'vtkdgwfxdsunmqoy';
+$mail->Username = '@gmail.com';
+$mail->Password = '';
 $mail->Port = ' 587';
 $mail->SMTPSecure = 'TLS';
 
-$mail->SetForm('alona.karpenko44@gmail.com', 'Alona Test');
-$mail->addAdress('alona.karpenko44@gmail.com');
-$mail->Subject = 'Email from Alona';
+$mail->SetForm('@gmail.com', ' Test');
+$mail->addAdress('@gmail.com');
+$mail->Subject = 'Email from ';
 
-$body = '<h1> Hi! It`s Alona </h1>';
+$body = '<h1> Hi! It`s  </h1>';
 
 if (trim(!empty(POST['name']))) {
     $body .= "<p>Name: <strong>".$_POST['name']."<strong/></p>";
@@ -53,3 +53,4 @@ if (trim(!empty(S_FILES['image']['tmp_name']))) {
 
 $mail->send();
 $mail->smtpClose();
+?>
