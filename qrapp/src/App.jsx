@@ -10,7 +10,7 @@ function App() {
       width:800, 
       margin: 2,
       color: {
-        dark:'#00000000',
+        dark:'#335383ff',
         light: '#ffffffff'
       }
     }, (err, url) => {
