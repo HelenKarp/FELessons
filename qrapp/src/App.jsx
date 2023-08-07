@@ -11,7 +11,7 @@ function App() {
       margin: 2,
       color: {
         dark:'#335383ff',
-        light: '#ffffffff'
+        light: '#ffffff'
       }
     }, (err, url) => {
       if (err) return console.error(err)
