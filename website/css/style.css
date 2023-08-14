@@ -73,6 +73,8 @@
 }
 .menu__list {
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 3px;
     column-gap: 35px;
     justify-content: flex-end;
 
