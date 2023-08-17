@@ -118,6 +118,7 @@
 }
 @media (max-width: 991.98px) {
     .button {
+        padding: 16px 20px;
         padding: 14px 20px;
     }
 }
