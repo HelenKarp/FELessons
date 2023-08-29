@@ -152,6 +152,6 @@
     }
     .icon-menu span {
         top: calc(50% - 1px);
-      
+      color: rebeccapurple;
     }
 }
