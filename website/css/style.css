@@ -152,6 +152,7 @@
     }
     .icon-menu span {
         top: calc(50% - 1px);
+        color: #0d0d11;
        
       
     }
