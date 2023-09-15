@@ -167,15 +167,12 @@
         height: 2px;
         background-color: #fff;
         transition: all 0.3s ease 0s;
-
     }
     .icon-menu::before {
         top: 0;
-
     }
     .icon-menu::after {
-       bottom: 0;
-        
+       bottom: 0;  
     }
     .icon-menu span {
         top: calc(50% - 1px); 
@@ -221,12 +218,9 @@
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        row-gap: 10px;
-
-        
+        row-gap: 10px;    
     }
     .menu__link {
-       
         font-size: 32px;
     }
     .header__container {
@@ -240,7 +234,7 @@
 
 @media (max-width: 560px) {
     .header__logo {
-    width: 70px;
+    width: 40px;
    /* flex: 0 0 60px;*/
     overflow: hidden;
     }
@@ -390,11 +384,11 @@
 
 
 }
-.img-small {
+.img-small1 {
   width: 17rem;
   height: 17rem;
 }
-.img-big {
+.img-big1 {
     width: 17rem;
     height: 25rem;
   }
