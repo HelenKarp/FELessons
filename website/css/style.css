@@ -422,3 +422,33 @@
 .menu__link {
 }
 
+/*--------------------------------------*/
+.page__clients {
+
+}
+.clients {
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+.clients__title {
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 14px;
+    line-height: 1.57;
+    
+    margin-bottom: 44px;
+
+}
+.clients__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px;
+
+}
+.clients__item img {
+    max-width: 100%;
+
+}
