@@ -467,5 +467,6 @@
     }
     .clients__title{
         margin-bottom: 20px;
+        color: 0;
     }
 }
