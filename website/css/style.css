@@ -117,6 +117,26 @@
     line-height: 1.62;
     color: #ffff;
 }
+.header-main {
+
+}
+.header-main__label {
+    display: inline-block;
+    border-radius: 12px;
+border: 1px solid rgba(129, 129, 139, 0.20);
+letter-spacing: 2px;
+text-transform: uppercase;
+color: #9c9c9c;
+padding: 11px 18px;
+transition: border 0.3 ease 0s;
+}
+.header-main__label:hover {
+    border: 1px solid rgba(129, 129, 139, 0.4);
+}
+.header-main__label:not(:last-child) {
+    margin-bottom: 19px;
+
+}
 .header__logo,
 .header__cart,
 .header__button {
@@ -345,6 +365,7 @@
 }
 .text {
     line-height: 1.5;
+    color: #81818b;
 } 
 .main__header {
     position: relative;
@@ -362,8 +383,6 @@
     line-height: 1.5;
     color: #9c9c9c;
     font-size: 18px;
-   
-
 }
 
 .text_big {
