@@ -19,6 +19,15 @@
  .page {
     flex: 1 1 auto;
  }
+ .page__main {
+
+ }
+ .page__clients {
+
+ }
+ .page__services {
+
+ }
 .button {
   display: inline-block;
   border-radius: 50px;
@@ -446,6 +455,9 @@ transition: border 0.3 ease 0s;
 .page__clients {
 
 }
+.clients__container {
+    
+}
 .clients {
     padding-top: 100px;
     padding-bottom: 70px;
@@ -466,7 +478,7 @@ transition: border 0.3 ease 0s;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 15px;
-
+   
 }
 .clients__item img {
     max-width: 100%;
@@ -489,4 +501,109 @@ transition: border 0.3 ease 0s;
         margin-bottom: 20px;
         color: 0;
     }
+}
+/*-------------*/
+.services {
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+@media (max-width: 991.98px) {
+    .services {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    } 
+}
+@media (max-width: 767.98px) {
+    .services {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+.services__container {
+    display: flex;
+    gap: 32px;
+}
+.services__content {
+    flex: 0 1 50%;
+    align-self: center;
+
+}
+.services__items {
+    flex: 0 1 50%;
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+}
+.item-service {
+    background: rgba(129, 129, 139, 0.1);
+    border-radius: 30px;
+    display: grid;
+    padding: 55px 25px;
+}
+.item-service__icon:not(:last-child) {
+    margin-bottom: 16px;
+}
+.menu__body {
+}
+.cart-header__text {
+}
+.cart-header__quantity {
+}
+.main__content {
+}
+.main__images.images-main {
+}
+.clients__title {
+}
+.clients__items {
+}
+
+
+.menu__list {
+}
+.main__header.header-main {
+}
+.images-main__column {
+}
+.clients__item {
+}
+.services__header.header-main {
+}
+.services__column {
+}
+.menu__item {
+}
+.header-main__title {
+}
+.header-main__text {
+}
+.header-main__actions {
+}
+.images-main__item.images-main__item_1 {
+}
+.images-main__item.images-main__item_2 {
+}
+.images-main__item.images-main__item_3 {
+}
+.images-main__item.images-main__item_4 {
+}
+.header-main__label {
+}
+.services__item.item-service {
+}
+.menu__link {
+}
+.header-main__button.button {
+}
+.header-main__button.button.button_dark {
+}
+.img-big {
+}
+.img-small {
+}
+.item-service__icon {
+}
+.item-service__title {
+}
+.item-service__text.text {
 }
