@@ -24,8 +24,7 @@ button{
     font-weight: inherit;
     font-size: inherit;
     line-height: inherit;
-    border: 0;
-    box-shadow: none;
+   
 }
 a{
     color: inherit;
@@ -110,12 +109,15 @@ title {
     background-color: #333;
     color: #fff;
 }
-.header__logo img {
-    width: 8.4375rem;
-}
 .header__logo {
     overflow: hidden;
 }
+.header__logo img {
+    width: 8.4375rem;
+   
+}
+
+
 
 .menu__list {
     display: flex;
@@ -124,7 +126,7 @@ title {
     row-gap: 0.625px;
     column-gap: 2.5rem;
     color: #fff;
-    font-size: 0.75px;
+    font-size: 0.75rem;
     font-weight: 500;
 }
 .menu__link:hover {
@@ -149,21 +151,22 @@ title {
     left: 0;
     object-fit: cover;
 }
-@media (max-width:625px) {
-    .header__logo img {
-       
-        flex: 0 0 2.0635rem ;
+
+@media (max-width: 39.0625em) {
+    .header__logo {
+     
+        flex: 0 0 2.0635rem;
     }
     .menu__list{
-        column-gap: 20px;
+        column-gap: 1.25rem;
         font-size: 14px;
 
     }
     .header__button {
-        padding: 10px 15px;
+        padding: 0.625rem 0.9375rem;
     }
     .header__body {
-        column-gap: 20px;
+        column-gap: 1.25rem;
     }
     .header__container {
         min-height: 70px;
