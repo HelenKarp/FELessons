@@ -3,9 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Rubik:regular,500" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:900" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/FELessons/pageHouse/css/style.css">
+
 
     <title>EcoCabins</title>
 </head>
@@ -57,10 +63,48 @@
                     <img src="/FELessons/pageHouse/img/Bitmap.jpg" alt="bg">
                 </div>
             </section>
+            <section class="page__materials materials">
+                <div class="materials__container">
+                    <div class="materials__content">
+                        <h2 class="materials__title title title--dark">Duurzame materialen</h2>
+                        <div class="materials__text">
+                            <p>Alle EcoCabins hebben een hoge isolatiewaarde, worden geproduceerd 
+                                met indien mogelijk duurzame en/of natuurlijke materialen en hebben als 
+                                opvallende uiterlijke kenmerk de ‘ronde hoeken’, mogelijk gemaakt door 
+                                het specifieke materiaalgebruik. De voordelen van bouwen met 
+                                hout zijn legio: hout is licht, flexibel, isoleert goed en bouwt 
+                                snel en efficiënt. </p>
+                        </div>
+                        <a href="#" class="materials__more">Lees meer</a>
+                    </div>
+                  
+                    <!-- Slider main container -->
+                    <div class="materials__slider slider-materials swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="slider-materials__wrapper swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="slider-materials__slide swiper-slide">
+                            <img src="/FELessons/pageHouse/img/IMG.jpg" alt="house">
+                          </div>
+                          <div class="slider-materials__slide swiper-slide">
+                            <img src="/FELessons/pageHouse/img/IMG.jpg" alt="house">
+                          </div>
+                          <div class="slider-materials__slide swiper-slide">
+                            <img src="/FELessons/pageHouse/img/IMG.jpg" alt="house">
+                          </div>
+                         
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="slider-materials__pagination swiper-pagination"></div>
+                      </div> 
+
+                </div>
+            </section>
         </main>
         <footer class="footer"></footer>
 
     </div>
-    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="/FELessons/pageHouse/js/index.js"></script>
 </body>
 </html>

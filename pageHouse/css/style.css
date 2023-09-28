@@ -16,6 +16,8 @@ body {
     height: 100%;
     min-width: 320px;
     line-height: 1;
+    font-family: 'Lato', sans-serif;
+font-family: 'Poppins', sans-serif;
 }
 button{
     cursor: pointer;
@@ -48,16 +50,16 @@ h6 {
 
 /*------------*/
 body {
-    font-style: Rubic;
+    font-style: "Rubic";
     font-size: 0.875rem;
     color: #646d70;
 }
 .wrapper {
-    min-height: 100%;
+   /* min-height: 100%;*/
     overflow: clip;
     display: flex;
     flex-direction: column;
-
+   
 }
 .page {
     flex: 1 1 auto;
@@ -68,17 +70,18 @@ body {
     padding-right: 0.9375rem;
     margin: 0 auto;
 }
-title {
+.title {
     font-size: 1.835rem;
     color: #fff;
-    font-style: Merryweather;
+    font-style: "Merryweather";
+    line-height: 130%;
 }
 .title--dark {
     color: #222d33;
 }
 .header {
     position: fixed;
-    width: 100%;
+  width: 100%;
     left: 0;
     top: 0;
     z-index: 50;
@@ -135,6 +138,26 @@ title {
 .main-section {
     min-height: 100vh;
     position: relative;
+    display: flex;
+    color: #fff;
+    font-weight: 900;
+
+}
+
+.main-section__container {
+    position: relative;
+    z-index: 2;
+    flex: 1 1 auto;
+    padding-top: 5.625rem;
+    padding-bottom: 1.875rem;
+    display: grid;
+    gap: 1.25rem;
+    align-items: center;
+    grid-template-columns: 54.32% 1fr;
+
+}
+.main-section__content {
+    flex: 0 0 54.32% ;
 }
 .main-section__image {
     position: absolute;
@@ -142,6 +165,7 @@ title {
     height: 100%;
     top: 0;
     left: 0;
+    background-color: #000;
 }
 .main-section__image img {
     position: absolute;
@@ -150,6 +174,48 @@ title {
     top: 0;
     left: 0;
     object-fit: cover;
+}
+.main-section__label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+}
+.main-section__label:not(:last-child){
+    margin-bottom: 12px;
+}
+.main-section__video-link {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: .625rem;
+    color: #fff;
+    font-size: .75rem;
+    font-weight: 500;
+    
+}
+.main-section__video-link::before {
+     content: "";
+     width: 32px;
+     height: 32px;
+     flex: 0 0 32px;
+     border-radius: 50%;
+     background: url(/FELessons/pageHouse/img/BTN\ Play.svg) left no-repeat;
+}
+@media (min-width:43.75em) {
+    .main-section__video-link {
+        justify-self: center;
+    }
+}
+@media (max-width:43.75em) {
+    .main-section__container {
+        grid-template-columns: auto;
+        align-content: center;
+    }
+}
+@media (max-width:43.75em) {
+    .main-section__image img {
+        opacity: 0.6;
+    }
 }
 
 @media (max-width: 39.0625em) {
@@ -171,4 +237,14 @@ title {
     .header__container {
         min-height: 70px;
     }
+}
+/*-----------------*/
+.materials__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    min-width: 0;
+}
+.materials__slider {
+    min-width: 0;
 }
