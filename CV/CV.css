@@ -167,6 +167,7 @@ background: var( --clr-accent-400);
   font-size: var(--fs-300);
   font-weight: var(--fw-bold);
   text-transform: uppercase;
+  border-radius: 1px;
 }
 
 
