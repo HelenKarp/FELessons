@@ -95,7 +95,3 @@ main {
 
 
 }
-.weather-box .weather:hover {
-  text-decoration: underline;
-  transform: scale(1.1);
-}
